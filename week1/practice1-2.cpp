@@ -67,6 +67,4 @@ int main() {
         cout<<tempNum;
     }
     cout<<"\n";
-
-
 }

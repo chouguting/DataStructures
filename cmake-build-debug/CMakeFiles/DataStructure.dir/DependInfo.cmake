@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/choug/CLionProjects/DataStructure/main.cpp" "C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/main.cpp.obj"
-  "C:/Users/choug/CLionProjects/DataStructure/practice2.cpp" "C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/practice2.cpp.obj"
+  "C:/Users/choug/CLionProjects/DataStructures/week1/practice1-1.cpp" "C:/Users/choug/CLionProjects/DataStructures/cmake-build-debug/CMakeFiles/DataStructure.dir/week1/practice1-1.cpp.obj"
+  "C:/Users/choug/CLionProjects/DataStructures/week1/practice1-2.cpp" "C:/Users/choug/CLionProjects/DataStructures/cmake-build-debug/CMakeFiles/DataStructure.dir/week1/practice1-2.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

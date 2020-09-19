@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/practice2.dir/practice2.cpp.obj"
-  "libpractice2.dll.a"
+  "CMakeFiles/practice2.dir/week1/practice1-2.cpp.obj"
   "practice2.exe"
   "practice2.exe.manifest"
+  "practice2.lib"
   "practice2.pdb"
 )
 
