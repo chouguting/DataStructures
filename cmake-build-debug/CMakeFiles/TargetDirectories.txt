@@ -1,4 +1,5 @@
-C:/Users/choug/CLionProjects/DataStructures/cmake-build-debug/CMakeFiles/practice2.dir
-C:/Users/choug/CLionProjects/DataStructures/cmake-build-debug/CMakeFiles/DataStructure.dir
-C:/Users/choug/CLionProjects/DataStructures/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/choug/CLionProjects/DataStructures/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice2.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice2-1.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
