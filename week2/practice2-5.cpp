@@ -76,7 +76,7 @@ int main() {
         }
         if (tempBlack == black && plus >= variable.size()) {
             break;
-        }g
+        }
         r++;
         plus++;
     }
