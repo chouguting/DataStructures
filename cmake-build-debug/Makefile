@@ -175,6 +175,19 @@ practice2-2/fast:
 .PHONY : practice2-2/fast
 
 #=============================================================================
+# Target rules for targets named practice3-1
+
+# Build rule for target.
+practice3-1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice3-1
+.PHONY : practice3-1
+
+# fast build rule for target.
+practice3-1/fast:
+	$(MAKE) -f CMakeFiles\practice3-1.dir\build.make CMakeFiles/practice3-1.dir/build
+.PHONY : practice3-1/fast
+
+#=============================================================================
 # Target rules for targets named practice2-4
 
 # Build rule for target.
@@ -199,6 +212,19 @@ practice2-5: cmake_check_build_system
 practice2-5/fast:
 	$(MAKE) -f CMakeFiles\practice2-5.dir\build.make CMakeFiles/practice2-5.dir/build
 .PHONY : practice2-5/fast
+
+#=============================================================================
+# Target rules for targets named practice3-2
+
+# Build rule for target.
+practice3-2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice3-2
+.PHONY : practice3-2
+
+# fast build rule for target.
+practice3-2/fast:
+	$(MAKE) -f CMakeFiles\practice3-2.dir\build.make CMakeFiles/practice3-2.dir/build
+.PHONY : practice3-2/fast
 
 week1/practice1-1.obj: week1/practice1-1.cpp.obj
 
@@ -392,6 +418,60 @@ week2/practice2-5.cpp.s:
 	$(MAKE) -f CMakeFiles\practice2-5.dir\build.make CMakeFiles/practice2-5.dir/week2/practice2-5.cpp.s
 .PHONY : week2/practice2-5.cpp.s
 
+week3/practice3-1.obj: week3/practice3-1.cpp.obj
+
+.PHONY : week3/practice3-1.obj
+
+# target to build an object file
+week3/practice3-1.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice3-1.dir\build.make CMakeFiles/practice3-1.dir/week3/practice3-1.cpp.obj
+.PHONY : week3/practice3-1.cpp.obj
+
+week3/practice3-1.i: week3/practice3-1.cpp.i
+
+.PHONY : week3/practice3-1.i
+
+# target to preprocess a source file
+week3/practice3-1.cpp.i:
+	$(MAKE) -f CMakeFiles\practice3-1.dir\build.make CMakeFiles/practice3-1.dir/week3/practice3-1.cpp.i
+.PHONY : week3/practice3-1.cpp.i
+
+week3/practice3-1.s: week3/practice3-1.cpp.s
+
+.PHONY : week3/practice3-1.s
+
+# target to generate assembly for a file
+week3/practice3-1.cpp.s:
+	$(MAKE) -f CMakeFiles\practice3-1.dir\build.make CMakeFiles/practice3-1.dir/week3/practice3-1.cpp.s
+.PHONY : week3/practice3-1.cpp.s
+
+week3/practice3-2.obj: week3/practice3-2.cpp.obj
+
+.PHONY : week3/practice3-2.obj
+
+# target to build an object file
+week3/practice3-2.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice3-2.dir\build.make CMakeFiles/practice3-2.dir/week3/practice3-2.cpp.obj
+.PHONY : week3/practice3-2.cpp.obj
+
+week3/practice3-2.i: week3/practice3-2.cpp.i
+
+.PHONY : week3/practice3-2.i
+
+# target to preprocess a source file
+week3/practice3-2.cpp.i:
+	$(MAKE) -f CMakeFiles\practice3-2.dir\build.make CMakeFiles/practice3-2.dir/week3/practice3-2.cpp.i
+.PHONY : week3/practice3-2.cpp.i
+
+week3/practice3-2.s: week3/practice3-2.cpp.s
+
+.PHONY : week3/practice3-2.s
+
+# target to generate assembly for a file
+week3/practice3-2.cpp.s:
+	$(MAKE) -f CMakeFiles\practice3-2.dir\build.make CMakeFiles/practice3-2.dir/week3/practice3-2.cpp.s
+.PHONY : week3/practice3-2.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -401,11 +481,13 @@ help:
 	@echo ... DataStructure
 	@echo ... practice2
 	@echo ... practice2-3
-	@echo ... edit_cache
 	@echo ... practice2-1
 	@echo ... practice2-2
+	@echo ... practice3-1
 	@echo ... practice2-4
 	@echo ... practice2-5
+	@echo ... practice3-2
+	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... week1/practice1-1.obj
 	@echo ... week1/practice1-1.i
@@ -428,6 +510,12 @@ help:
 	@echo ... week2/practice2-5.obj
 	@echo ... week2/practice2-5.i
 	@echo ... week2/practice2-5.s
+	@echo ... week3/practice3-1.obj
+	@echo ... week3/practice3-1.i
+	@echo ... week3/practice3-1.s
+	@echo ... week3/practice3-2.obj
+	@echo ... week3/practice3-2.i
+	@echo ... week3/practice3-2.s
 .PHONY : help
 
 
