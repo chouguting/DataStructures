@@ -227,6 +227,19 @@ practice3-2/fast:
 .PHONY : practice3-2/fast
 
 #=============================================================================
+# Target rules for targets named practice5-4
+
+# Build rule for target.
+practice5-4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice5-4
+.PHONY : practice5-4
+
+# fast build rule for target.
+practice5-4/fast:
+	$(MAKE) -f CMakeFiles\practice5-4.dir\build.make CMakeFiles/practice5-4.dir/build
+.PHONY : practice5-4/fast
+
+#=============================================================================
 # Target rules for targets named practice4-1
 
 # Build rule for target.
@@ -251,6 +264,58 @@ practice4-2: cmake_check_build_system
 practice4-2/fast:
 	$(MAKE) -f CMakeFiles\practice4-2.dir\build.make CMakeFiles/practice4-2.dir/build
 .PHONY : practice4-2/fast
+
+#=============================================================================
+# Target rules for targets named practice5-2
+
+# Build rule for target.
+practice5-2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice5-2
+.PHONY : practice5-2
+
+# fast build rule for target.
+practice5-2/fast:
+	$(MAKE) -f CMakeFiles\practice5-2.dir\build.make CMakeFiles/practice5-2.dir/build
+.PHONY : practice5-2/fast
+
+#=============================================================================
+# Target rules for targets named practice5-3
+
+# Build rule for target.
+practice5-3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice5-3
+.PHONY : practice5-3
+
+# fast build rule for target.
+practice5-3/fast:
+	$(MAKE) -f CMakeFiles\practice5-3.dir\build.make CMakeFiles/practice5-3.dir/build
+.PHONY : practice5-3/fast
+
+#=============================================================================
+# Target rules for targets named practice5-1
+
+# Build rule for target.
+practice5-1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice5-1
+.PHONY : practice5-1
+
+# fast build rule for target.
+practice5-1/fast:
+	$(MAKE) -f CMakeFiles\practice5-1.dir\build.make CMakeFiles/practice5-1.dir/build
+.PHONY : practice5-1/fast
+
+#=============================================================================
+# Target rules for targets named practice5-5
+
+# Build rule for target.
+practice5-5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice5-5
+.PHONY : practice5-5
+
+# fast build rule for target.
+practice5-5/fast:
+	$(MAKE) -f CMakeFiles\practice5-5.dir\build.make CMakeFiles/practice5-5.dir/build
+.PHONY : practice5-5/fast
 
 week1/practice1-1.obj: week1/practice1-1.cpp.obj
 
@@ -552,6 +617,141 @@ week4/practice4-2.cpp.s:
 	$(MAKE) -f CMakeFiles\practice4-2.dir\build.make CMakeFiles/practice4-2.dir/week4/practice4-2.cpp.s
 .PHONY : week4/practice4-2.cpp.s
 
+week5/practice5-1.obj: week5/practice5-1.cpp.obj
+
+.PHONY : week5/practice5-1.obj
+
+# target to build an object file
+week5/practice5-1.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice5-1.dir\build.make CMakeFiles/practice5-1.dir/week5/practice5-1.cpp.obj
+.PHONY : week5/practice5-1.cpp.obj
+
+week5/practice5-1.i: week5/practice5-1.cpp.i
+
+.PHONY : week5/practice5-1.i
+
+# target to preprocess a source file
+week5/practice5-1.cpp.i:
+	$(MAKE) -f CMakeFiles\practice5-1.dir\build.make CMakeFiles/practice5-1.dir/week5/practice5-1.cpp.i
+.PHONY : week5/practice5-1.cpp.i
+
+week5/practice5-1.s: week5/practice5-1.cpp.s
+
+.PHONY : week5/practice5-1.s
+
+# target to generate assembly for a file
+week5/practice5-1.cpp.s:
+	$(MAKE) -f CMakeFiles\practice5-1.dir\build.make CMakeFiles/practice5-1.dir/week5/practice5-1.cpp.s
+.PHONY : week5/practice5-1.cpp.s
+
+week5/practice5-2.obj: week5/practice5-2.cpp.obj
+
+.PHONY : week5/practice5-2.obj
+
+# target to build an object file
+week5/practice5-2.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice5-2.dir\build.make CMakeFiles/practice5-2.dir/week5/practice5-2.cpp.obj
+.PHONY : week5/practice5-2.cpp.obj
+
+week5/practice5-2.i: week5/practice5-2.cpp.i
+
+.PHONY : week5/practice5-2.i
+
+# target to preprocess a source file
+week5/practice5-2.cpp.i:
+	$(MAKE) -f CMakeFiles\practice5-2.dir\build.make CMakeFiles/practice5-2.dir/week5/practice5-2.cpp.i
+.PHONY : week5/practice5-2.cpp.i
+
+week5/practice5-2.s: week5/practice5-2.cpp.s
+
+.PHONY : week5/practice5-2.s
+
+# target to generate assembly for a file
+week5/practice5-2.cpp.s:
+	$(MAKE) -f CMakeFiles\practice5-2.dir\build.make CMakeFiles/practice5-2.dir/week5/practice5-2.cpp.s
+.PHONY : week5/practice5-2.cpp.s
+
+week5/practice5-3.obj: week5/practice5-3.cpp.obj
+
+.PHONY : week5/practice5-3.obj
+
+# target to build an object file
+week5/practice5-3.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice5-3.dir\build.make CMakeFiles/practice5-3.dir/week5/practice5-3.cpp.obj
+.PHONY : week5/practice5-3.cpp.obj
+
+week5/practice5-3.i: week5/practice5-3.cpp.i
+
+.PHONY : week5/practice5-3.i
+
+# target to preprocess a source file
+week5/practice5-3.cpp.i:
+	$(MAKE) -f CMakeFiles\practice5-3.dir\build.make CMakeFiles/practice5-3.dir/week5/practice5-3.cpp.i
+.PHONY : week5/practice5-3.cpp.i
+
+week5/practice5-3.s: week5/practice5-3.cpp.s
+
+.PHONY : week5/practice5-3.s
+
+# target to generate assembly for a file
+week5/practice5-3.cpp.s:
+	$(MAKE) -f CMakeFiles\practice5-3.dir\build.make CMakeFiles/practice5-3.dir/week5/practice5-3.cpp.s
+.PHONY : week5/practice5-3.cpp.s
+
+week5/practice5-4.obj: week5/practice5-4.cpp.obj
+
+.PHONY : week5/practice5-4.obj
+
+# target to build an object file
+week5/practice5-4.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice5-4.dir\build.make CMakeFiles/practice5-4.dir/week5/practice5-4.cpp.obj
+.PHONY : week5/practice5-4.cpp.obj
+
+week5/practice5-4.i: week5/practice5-4.cpp.i
+
+.PHONY : week5/practice5-4.i
+
+# target to preprocess a source file
+week5/practice5-4.cpp.i:
+	$(MAKE) -f CMakeFiles\practice5-4.dir\build.make CMakeFiles/practice5-4.dir/week5/practice5-4.cpp.i
+.PHONY : week5/practice5-4.cpp.i
+
+week5/practice5-4.s: week5/practice5-4.cpp.s
+
+.PHONY : week5/practice5-4.s
+
+# target to generate assembly for a file
+week5/practice5-4.cpp.s:
+	$(MAKE) -f CMakeFiles\practice5-4.dir\build.make CMakeFiles/practice5-4.dir/week5/practice5-4.cpp.s
+.PHONY : week5/practice5-4.cpp.s
+
+week5/practice5-5.obj: week5/practice5-5.cpp.obj
+
+.PHONY : week5/practice5-5.obj
+
+# target to build an object file
+week5/practice5-5.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice5-5.dir\build.make CMakeFiles/practice5-5.dir/week5/practice5-5.cpp.obj
+.PHONY : week5/practice5-5.cpp.obj
+
+week5/practice5-5.i: week5/practice5-5.cpp.i
+
+.PHONY : week5/practice5-5.i
+
+# target to preprocess a source file
+week5/practice5-5.cpp.i:
+	$(MAKE) -f CMakeFiles\practice5-5.dir\build.make CMakeFiles/practice5-5.dir/week5/practice5-5.cpp.i
+.PHONY : week5/practice5-5.cpp.i
+
+week5/practice5-5.s: week5/practice5-5.cpp.s
+
+.PHONY : week5/practice5-5.s
+
+# target to generate assembly for a file
+week5/practice5-5.cpp.s:
+	$(MAKE) -f CMakeFiles\practice5-5.dir\build.make CMakeFiles/practice5-5.dir/week5/practice5-5.cpp.s
+.PHONY : week5/practice5-5.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -567,8 +767,13 @@ help:
 	@echo ... practice2-4
 	@echo ... practice2-5
 	@echo ... practice3-2
+	@echo ... practice5-4
 	@echo ... practice4-1
 	@echo ... practice4-2
+	@echo ... practice5-2
+	@echo ... practice5-3
+	@echo ... practice5-1
+	@echo ... practice5-5
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... week1/practice1-1.obj
@@ -604,6 +809,21 @@ help:
 	@echo ... week4/practice4-2.obj
 	@echo ... week4/practice4-2.i
 	@echo ... week4/practice4-2.s
+	@echo ... week5/practice5-1.obj
+	@echo ... week5/practice5-1.i
+	@echo ... week5/practice5-1.s
+	@echo ... week5/practice5-2.obj
+	@echo ... week5/practice5-2.i
+	@echo ... week5/practice5-2.s
+	@echo ... week5/practice5-3.obj
+	@echo ... week5/practice5-3.i
+	@echo ... week5/practice5-3.s
+	@echo ... week5/practice5-4.obj
+	@echo ... week5/practice5-4.i
+	@echo ... week5/practice5-4.s
+	@echo ... week5/practice5-5.obj
+	@echo ... week5/practice5-5.i
+	@echo ... week5/practice5-5.s
 .PHONY : help
 
 
