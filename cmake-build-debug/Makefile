@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,647 +110,124 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DataStructure
+# Target rules for targets named practice6-1
 
 # Build rule for target.
-DataStructure: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 DataStructure
-.PHONY : DataStructure
+practice6-1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice6-1
+.PHONY : practice6-1
 
 # fast build rule for target.
-DataStructure/fast:
-	$(MAKE) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/build
-.PHONY : DataStructure/fast
+practice6-1/fast:
+	$(MAKE) -f CMakeFiles\practice6-1.dir\build.make CMakeFiles/practice6-1.dir/build
+.PHONY : practice6-1/fast
 
 #=============================================================================
-# Target rules for targets named practice2
+# Target rules for targets named practice6-4
 
 # Build rule for target.
-practice2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice2
-.PHONY : practice2
+practice6-4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice6-4
+.PHONY : practice6-4
 
 # fast build rule for target.
-practice2/fast:
-	$(MAKE) -f CMakeFiles\practice2.dir\build.make CMakeFiles/practice2.dir/build
-.PHONY : practice2/fast
+practice6-4/fast:
+	$(MAKE) -f CMakeFiles\practice6-4.dir\build.make CMakeFiles/practice6-4.dir/build
+.PHONY : practice6-4/fast
 
 #=============================================================================
-# Target rules for targets named practice2-3
+# Target rules for targets named practice6-2
 
 # Build rule for target.
-practice2-3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice2-3
-.PHONY : practice2-3
+practice6-2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice6-2
+.PHONY : practice6-2
 
 # fast build rule for target.
-practice2-3/fast:
-	$(MAKE) -f CMakeFiles\practice2-3.dir\build.make CMakeFiles/practice2-3.dir/build
-.PHONY : practice2-3/fast
+practice6-2/fast:
+	$(MAKE) -f CMakeFiles\practice6-2.dir\build.make CMakeFiles/practice6-2.dir/build
+.PHONY : practice6-2/fast
 
-#=============================================================================
-# Target rules for targets named practice2-1
+week6/practice6-1.obj: week6/practice6-1.cpp.obj
 
-# Build rule for target.
-practice2-1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice2-1
-.PHONY : practice2-1
-
-# fast build rule for target.
-practice2-1/fast:
-	$(MAKE) -f CMakeFiles\practice2-1.dir\build.make CMakeFiles/practice2-1.dir/build
-.PHONY : practice2-1/fast
-
-#=============================================================================
-# Target rules for targets named practice2-2
-
-# Build rule for target.
-practice2-2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice2-2
-.PHONY : practice2-2
-
-# fast build rule for target.
-practice2-2/fast:
-	$(MAKE) -f CMakeFiles\practice2-2.dir\build.make CMakeFiles/practice2-2.dir/build
-.PHONY : practice2-2/fast
-
-#=============================================================================
-# Target rules for targets named practice3-1
-
-# Build rule for target.
-practice3-1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice3-1
-.PHONY : practice3-1
-
-# fast build rule for target.
-practice3-1/fast:
-	$(MAKE) -f CMakeFiles\practice3-1.dir\build.make CMakeFiles/practice3-1.dir/build
-.PHONY : practice3-1/fast
-
-#=============================================================================
-# Target rules for targets named practice2-4
-
-# Build rule for target.
-practice2-4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice2-4
-.PHONY : practice2-4
-
-# fast build rule for target.
-practice2-4/fast:
-	$(MAKE) -f CMakeFiles\practice2-4.dir\build.make CMakeFiles/practice2-4.dir/build
-.PHONY : practice2-4/fast
-
-#=============================================================================
-# Target rules for targets named practice2-5
-
-# Build rule for target.
-practice2-5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice2-5
-.PHONY : practice2-5
-
-# fast build rule for target.
-practice2-5/fast:
-	$(MAKE) -f CMakeFiles\practice2-5.dir\build.make CMakeFiles/practice2-5.dir/build
-.PHONY : practice2-5/fast
-
-#=============================================================================
-# Target rules for targets named practice3-2
-
-# Build rule for target.
-practice3-2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice3-2
-.PHONY : practice3-2
-
-# fast build rule for target.
-practice3-2/fast:
-	$(MAKE) -f CMakeFiles\practice3-2.dir\build.make CMakeFiles/practice3-2.dir/build
-.PHONY : practice3-2/fast
-
-#=============================================================================
-# Target rules for targets named practice5-4
-
-# Build rule for target.
-practice5-4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice5-4
-.PHONY : practice5-4
-
-# fast build rule for target.
-practice5-4/fast:
-	$(MAKE) -f CMakeFiles\practice5-4.dir\build.make CMakeFiles/practice5-4.dir/build
-.PHONY : practice5-4/fast
-
-#=============================================================================
-# Target rules for targets named practice4-1
-
-# Build rule for target.
-practice4-1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice4-1
-.PHONY : practice4-1
-
-# fast build rule for target.
-practice4-1/fast:
-	$(MAKE) -f CMakeFiles\practice4-1.dir\build.make CMakeFiles/practice4-1.dir/build
-.PHONY : practice4-1/fast
-
-#=============================================================================
-# Target rules for targets named practice4-2
-
-# Build rule for target.
-practice4-2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice4-2
-.PHONY : practice4-2
-
-# fast build rule for target.
-practice4-2/fast:
-	$(MAKE) -f CMakeFiles\practice4-2.dir\build.make CMakeFiles/practice4-2.dir/build
-.PHONY : practice4-2/fast
-
-#=============================================================================
-# Target rules for targets named practice5-2
-
-# Build rule for target.
-practice5-2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice5-2
-.PHONY : practice5-2
-
-# fast build rule for target.
-practice5-2/fast:
-	$(MAKE) -f CMakeFiles\practice5-2.dir\build.make CMakeFiles/practice5-2.dir/build
-.PHONY : practice5-2/fast
-
-#=============================================================================
-# Target rules for targets named practice5-3
-
-# Build rule for target.
-practice5-3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice5-3
-.PHONY : practice5-3
-
-# fast build rule for target.
-practice5-3/fast:
-	$(MAKE) -f CMakeFiles\practice5-3.dir\build.make CMakeFiles/practice5-3.dir/build
-.PHONY : practice5-3/fast
-
-#=============================================================================
-# Target rules for targets named practice5-1
-
-# Build rule for target.
-practice5-1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice5-1
-.PHONY : practice5-1
-
-# fast build rule for target.
-practice5-1/fast:
-	$(MAKE) -f CMakeFiles\practice5-1.dir\build.make CMakeFiles/practice5-1.dir/build
-.PHONY : practice5-1/fast
-
-#=============================================================================
-# Target rules for targets named practice5-5
-
-# Build rule for target.
-practice5-5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 practice5-5
-.PHONY : practice5-5
-
-# fast build rule for target.
-practice5-5/fast:
-	$(MAKE) -f CMakeFiles\practice5-5.dir\build.make CMakeFiles/practice5-5.dir/build
-.PHONY : practice5-5/fast
-
-week1/practice1-1.obj: week1/practice1-1.cpp.obj
-
-.PHONY : week1/practice1-1.obj
+.PHONY : week6/practice6-1.obj
 
 # target to build an object file
-week1/practice1-1.cpp.obj:
-	$(MAKE) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/week1/practice1-1.cpp.obj
-.PHONY : week1/practice1-1.cpp.obj
+week6/practice6-1.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice6-1.dir\build.make CMakeFiles/practice6-1.dir/week6/practice6-1.cpp.obj
+.PHONY : week6/practice6-1.cpp.obj
 
-week1/practice1-1.i: week1/practice1-1.cpp.i
+week6/practice6-1.i: week6/practice6-1.cpp.i
 
-.PHONY : week1/practice1-1.i
+.PHONY : week6/practice6-1.i
 
 # target to preprocess a source file
-week1/practice1-1.cpp.i:
-	$(MAKE) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/week1/practice1-1.cpp.i
-.PHONY : week1/practice1-1.cpp.i
+week6/practice6-1.cpp.i:
+	$(MAKE) -f CMakeFiles\practice6-1.dir\build.make CMakeFiles/practice6-1.dir/week6/practice6-1.cpp.i
+.PHONY : week6/practice6-1.cpp.i
 
-week1/practice1-1.s: week1/practice1-1.cpp.s
+week6/practice6-1.s: week6/practice6-1.cpp.s
 
-.PHONY : week1/practice1-1.s
+.PHONY : week6/practice6-1.s
 
 # target to generate assembly for a file
-week1/practice1-1.cpp.s:
-	$(MAKE) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/week1/practice1-1.cpp.s
-.PHONY : week1/practice1-1.cpp.s
+week6/practice6-1.cpp.s:
+	$(MAKE) -f CMakeFiles\practice6-1.dir\build.make CMakeFiles/practice6-1.dir/week6/practice6-1.cpp.s
+.PHONY : week6/practice6-1.cpp.s
 
-week1/practice1-2.obj: week1/practice1-2.cpp.obj
+week6/practice6-2.obj: week6/practice6-2.cpp.obj
 
-.PHONY : week1/practice1-2.obj
+.PHONY : week6/practice6-2.obj
 
 # target to build an object file
-week1/practice1-2.cpp.obj:
-	$(MAKE) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/week1/practice1-2.cpp.obj
-	$(MAKE) -f CMakeFiles\practice2.dir\build.make CMakeFiles/practice2.dir/week1/practice1-2.cpp.obj
-.PHONY : week1/practice1-2.cpp.obj
+week6/practice6-2.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice6-2.dir\build.make CMakeFiles/practice6-2.dir/week6/practice6-2.cpp.obj
+.PHONY : week6/practice6-2.cpp.obj
 
-week1/practice1-2.i: week1/practice1-2.cpp.i
+week6/practice6-2.i: week6/practice6-2.cpp.i
 
-.PHONY : week1/practice1-2.i
+.PHONY : week6/practice6-2.i
 
 # target to preprocess a source file
-week1/practice1-2.cpp.i:
-	$(MAKE) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/week1/practice1-2.cpp.i
-	$(MAKE) -f CMakeFiles\practice2.dir\build.make CMakeFiles/practice2.dir/week1/practice1-2.cpp.i
-.PHONY : week1/practice1-2.cpp.i
+week6/practice6-2.cpp.i:
+	$(MAKE) -f CMakeFiles\practice6-2.dir\build.make CMakeFiles/practice6-2.dir/week6/practice6-2.cpp.i
+.PHONY : week6/practice6-2.cpp.i
 
-week1/practice1-2.s: week1/practice1-2.cpp.s
+week6/practice6-2.s: week6/practice6-2.cpp.s
 
-.PHONY : week1/practice1-2.s
+.PHONY : week6/practice6-2.s
 
 # target to generate assembly for a file
-week1/practice1-2.cpp.s:
-	$(MAKE) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/week1/practice1-2.cpp.s
-	$(MAKE) -f CMakeFiles\practice2.dir\build.make CMakeFiles/practice2.dir/week1/practice1-2.cpp.s
-.PHONY : week1/practice1-2.cpp.s
+week6/practice6-2.cpp.s:
+	$(MAKE) -f CMakeFiles\practice6-2.dir\build.make CMakeFiles/practice6-2.dir/week6/practice6-2.cpp.s
+.PHONY : week6/practice6-2.cpp.s
 
-week2/practice2-1.obj: week2/practice2-1.cpp.obj
+week6/practice6-4.obj: week6/practice6-4.cpp.obj
 
-.PHONY : week2/practice2-1.obj
+.PHONY : week6/practice6-4.obj
 
 # target to build an object file
-week2/practice2-1.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice2-1.dir\build.make CMakeFiles/practice2-1.dir/week2/practice2-1.cpp.obj
-.PHONY : week2/practice2-1.cpp.obj
+week6/practice6-4.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice6-4.dir\build.make CMakeFiles/practice6-4.dir/week6/practice6-4.cpp.obj
+.PHONY : week6/practice6-4.cpp.obj
 
-week2/practice2-1.i: week2/practice2-1.cpp.i
+week6/practice6-4.i: week6/practice6-4.cpp.i
 
-.PHONY : week2/practice2-1.i
-
-# target to preprocess a source file
-week2/practice2-1.cpp.i:
-	$(MAKE) -f CMakeFiles\practice2-1.dir\build.make CMakeFiles/practice2-1.dir/week2/practice2-1.cpp.i
-.PHONY : week2/practice2-1.cpp.i
-
-week2/practice2-1.s: week2/practice2-1.cpp.s
-
-.PHONY : week2/practice2-1.s
-
-# target to generate assembly for a file
-week2/practice2-1.cpp.s:
-	$(MAKE) -f CMakeFiles\practice2-1.dir\build.make CMakeFiles/practice2-1.dir/week2/practice2-1.cpp.s
-.PHONY : week2/practice2-1.cpp.s
-
-week2/practice2-2.obj: week2/practice2-2.cpp.obj
-
-.PHONY : week2/practice2-2.obj
-
-# target to build an object file
-week2/practice2-2.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice2-2.dir\build.make CMakeFiles/practice2-2.dir/week2/practice2-2.cpp.obj
-.PHONY : week2/practice2-2.cpp.obj
-
-week2/practice2-2.i: week2/practice2-2.cpp.i
-
-.PHONY : week2/practice2-2.i
+.PHONY : week6/practice6-4.i
 
 # target to preprocess a source file
-week2/practice2-2.cpp.i:
-	$(MAKE) -f CMakeFiles\practice2-2.dir\build.make CMakeFiles/practice2-2.dir/week2/practice2-2.cpp.i
-.PHONY : week2/practice2-2.cpp.i
+week6/practice6-4.cpp.i:
+	$(MAKE) -f CMakeFiles\practice6-4.dir\build.make CMakeFiles/practice6-4.dir/week6/practice6-4.cpp.i
+.PHONY : week6/practice6-4.cpp.i
 
-week2/practice2-2.s: week2/practice2-2.cpp.s
+week6/practice6-4.s: week6/practice6-4.cpp.s
 
-.PHONY : week2/practice2-2.s
-
-# target to generate assembly for a file
-week2/practice2-2.cpp.s:
-	$(MAKE) -f CMakeFiles\practice2-2.dir\build.make CMakeFiles/practice2-2.dir/week2/practice2-2.cpp.s
-.PHONY : week2/practice2-2.cpp.s
-
-week2/practice2-3.obj: week2/practice2-3.cpp.obj
-
-.PHONY : week2/practice2-3.obj
-
-# target to build an object file
-week2/practice2-3.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice2-3.dir\build.make CMakeFiles/practice2-3.dir/week2/practice2-3.cpp.obj
-.PHONY : week2/practice2-3.cpp.obj
-
-week2/practice2-3.i: week2/practice2-3.cpp.i
-
-.PHONY : week2/practice2-3.i
-
-# target to preprocess a source file
-week2/practice2-3.cpp.i:
-	$(MAKE) -f CMakeFiles\practice2-3.dir\build.make CMakeFiles/practice2-3.dir/week2/practice2-3.cpp.i
-.PHONY : week2/practice2-3.cpp.i
-
-week2/practice2-3.s: week2/practice2-3.cpp.s
-
-.PHONY : week2/practice2-3.s
+.PHONY : week6/practice6-4.s
 
 # target to generate assembly for a file
-week2/practice2-3.cpp.s:
-	$(MAKE) -f CMakeFiles\practice2-3.dir\build.make CMakeFiles/practice2-3.dir/week2/practice2-3.cpp.s
-.PHONY : week2/practice2-3.cpp.s
-
-week2/practice2-4.obj: week2/practice2-4.cpp.obj
-
-.PHONY : week2/practice2-4.obj
-
-# target to build an object file
-week2/practice2-4.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice2-4.dir\build.make CMakeFiles/practice2-4.dir/week2/practice2-4.cpp.obj
-.PHONY : week2/practice2-4.cpp.obj
-
-week2/practice2-4.i: week2/practice2-4.cpp.i
-
-.PHONY : week2/practice2-4.i
-
-# target to preprocess a source file
-week2/practice2-4.cpp.i:
-	$(MAKE) -f CMakeFiles\practice2-4.dir\build.make CMakeFiles/practice2-4.dir/week2/practice2-4.cpp.i
-.PHONY : week2/practice2-4.cpp.i
-
-week2/practice2-4.s: week2/practice2-4.cpp.s
-
-.PHONY : week2/practice2-4.s
-
-# target to generate assembly for a file
-week2/practice2-4.cpp.s:
-	$(MAKE) -f CMakeFiles\practice2-4.dir\build.make CMakeFiles/practice2-4.dir/week2/practice2-4.cpp.s
-.PHONY : week2/practice2-4.cpp.s
-
-week2/practice2-5.obj: week2/practice2-5.cpp.obj
-
-.PHONY : week2/practice2-5.obj
-
-# target to build an object file
-week2/practice2-5.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice2-5.dir\build.make CMakeFiles/practice2-5.dir/week2/practice2-5.cpp.obj
-.PHONY : week2/practice2-5.cpp.obj
-
-week2/practice2-5.i: week2/practice2-5.cpp.i
-
-.PHONY : week2/practice2-5.i
-
-# target to preprocess a source file
-week2/practice2-5.cpp.i:
-	$(MAKE) -f CMakeFiles\practice2-5.dir\build.make CMakeFiles/practice2-5.dir/week2/practice2-5.cpp.i
-.PHONY : week2/practice2-5.cpp.i
-
-week2/practice2-5.s: week2/practice2-5.cpp.s
-
-.PHONY : week2/practice2-5.s
-
-# target to generate assembly for a file
-week2/practice2-5.cpp.s:
-	$(MAKE) -f CMakeFiles\practice2-5.dir\build.make CMakeFiles/practice2-5.dir/week2/practice2-5.cpp.s
-.PHONY : week2/practice2-5.cpp.s
-
-week3/practice3-1.obj: week3/practice3-1.cpp.obj
-
-.PHONY : week3/practice3-1.obj
-
-# target to build an object file
-week3/practice3-1.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice3-1.dir\build.make CMakeFiles/practice3-1.dir/week3/practice3-1.cpp.obj
-.PHONY : week3/practice3-1.cpp.obj
-
-week3/practice3-1.i: week3/practice3-1.cpp.i
-
-.PHONY : week3/practice3-1.i
-
-# target to preprocess a source file
-week3/practice3-1.cpp.i:
-	$(MAKE) -f CMakeFiles\practice3-1.dir\build.make CMakeFiles/practice3-1.dir/week3/practice3-1.cpp.i
-.PHONY : week3/practice3-1.cpp.i
-
-week3/practice3-1.s: week3/practice3-1.cpp.s
-
-.PHONY : week3/practice3-1.s
-
-# target to generate assembly for a file
-week3/practice3-1.cpp.s:
-	$(MAKE) -f CMakeFiles\practice3-1.dir\build.make CMakeFiles/practice3-1.dir/week3/practice3-1.cpp.s
-.PHONY : week3/practice3-1.cpp.s
-
-week3/practice3-2.obj: week3/practice3-2.cpp.obj
-
-.PHONY : week3/practice3-2.obj
-
-# target to build an object file
-week3/practice3-2.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice3-2.dir\build.make CMakeFiles/practice3-2.dir/week3/practice3-2.cpp.obj
-.PHONY : week3/practice3-2.cpp.obj
-
-week3/practice3-2.i: week3/practice3-2.cpp.i
-
-.PHONY : week3/practice3-2.i
-
-# target to preprocess a source file
-week3/practice3-2.cpp.i:
-	$(MAKE) -f CMakeFiles\practice3-2.dir\build.make CMakeFiles/practice3-2.dir/week3/practice3-2.cpp.i
-.PHONY : week3/practice3-2.cpp.i
-
-week3/practice3-2.s: week3/practice3-2.cpp.s
-
-.PHONY : week3/practice3-2.s
-
-# target to generate assembly for a file
-week3/practice3-2.cpp.s:
-	$(MAKE) -f CMakeFiles\practice3-2.dir\build.make CMakeFiles/practice3-2.dir/week3/practice3-2.cpp.s
-.PHONY : week3/practice3-2.cpp.s
-
-week4/practice4-1.obj: week4/practice4-1.cpp.obj
-
-.PHONY : week4/practice4-1.obj
-
-# target to build an object file
-week4/practice4-1.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice4-1.dir\build.make CMakeFiles/practice4-1.dir/week4/practice4-1.cpp.obj
-.PHONY : week4/practice4-1.cpp.obj
-
-week4/practice4-1.i: week4/practice4-1.cpp.i
-
-.PHONY : week4/practice4-1.i
-
-# target to preprocess a source file
-week4/practice4-1.cpp.i:
-	$(MAKE) -f CMakeFiles\practice4-1.dir\build.make CMakeFiles/practice4-1.dir/week4/practice4-1.cpp.i
-.PHONY : week4/practice4-1.cpp.i
-
-week4/practice4-1.s: week4/practice4-1.cpp.s
-
-.PHONY : week4/practice4-1.s
-
-# target to generate assembly for a file
-week4/practice4-1.cpp.s:
-	$(MAKE) -f CMakeFiles\practice4-1.dir\build.make CMakeFiles/practice4-1.dir/week4/practice4-1.cpp.s
-.PHONY : week4/practice4-1.cpp.s
-
-week4/practice4-2.obj: week4/practice4-2.cpp.obj
-
-.PHONY : week4/practice4-2.obj
-
-# target to build an object file
-week4/practice4-2.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice4-2.dir\build.make CMakeFiles/practice4-2.dir/week4/practice4-2.cpp.obj
-.PHONY : week4/practice4-2.cpp.obj
-
-week4/practice4-2.i: week4/practice4-2.cpp.i
-
-.PHONY : week4/practice4-2.i
-
-# target to preprocess a source file
-week4/practice4-2.cpp.i:
-	$(MAKE) -f CMakeFiles\practice4-2.dir\build.make CMakeFiles/practice4-2.dir/week4/practice4-2.cpp.i
-.PHONY : week4/practice4-2.cpp.i
-
-week4/practice4-2.s: week4/practice4-2.cpp.s
-
-.PHONY : week4/practice4-2.s
-
-# target to generate assembly for a file
-week4/practice4-2.cpp.s:
-	$(MAKE) -f CMakeFiles\practice4-2.dir\build.make CMakeFiles/practice4-2.dir/week4/practice4-2.cpp.s
-.PHONY : week4/practice4-2.cpp.s
-
-week5/practice5-1.obj: week5/practice5-1.cpp.obj
-
-.PHONY : week5/practice5-1.obj
-
-# target to build an object file
-week5/practice5-1.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice5-1.dir\build.make CMakeFiles/practice5-1.dir/week5/practice5-1.cpp.obj
-.PHONY : week5/practice5-1.cpp.obj
-
-week5/practice5-1.i: week5/practice5-1.cpp.i
-
-.PHONY : week5/practice5-1.i
-
-# target to preprocess a source file
-week5/practice5-1.cpp.i:
-	$(MAKE) -f CMakeFiles\practice5-1.dir\build.make CMakeFiles/practice5-1.dir/week5/practice5-1.cpp.i
-.PHONY : week5/practice5-1.cpp.i
-
-week5/practice5-1.s: week5/practice5-1.cpp.s
-
-.PHONY : week5/practice5-1.s
-
-# target to generate assembly for a file
-week5/practice5-1.cpp.s:
-	$(MAKE) -f CMakeFiles\practice5-1.dir\build.make CMakeFiles/practice5-1.dir/week5/practice5-1.cpp.s
-.PHONY : week5/practice5-1.cpp.s
-
-week5/practice5-2.obj: week5/practice5-2.cpp.obj
-
-.PHONY : week5/practice5-2.obj
-
-# target to build an object file
-week5/practice5-2.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice5-2.dir\build.make CMakeFiles/practice5-2.dir/week5/practice5-2.cpp.obj
-.PHONY : week5/practice5-2.cpp.obj
-
-week5/practice5-2.i: week5/practice5-2.cpp.i
-
-.PHONY : week5/practice5-2.i
-
-# target to preprocess a source file
-week5/practice5-2.cpp.i:
-	$(MAKE) -f CMakeFiles\practice5-2.dir\build.make CMakeFiles/practice5-2.dir/week5/practice5-2.cpp.i
-.PHONY : week5/practice5-2.cpp.i
-
-week5/practice5-2.s: week5/practice5-2.cpp.s
-
-.PHONY : week5/practice5-2.s
-
-# target to generate assembly for a file
-week5/practice5-2.cpp.s:
-	$(MAKE) -f CMakeFiles\practice5-2.dir\build.make CMakeFiles/practice5-2.dir/week5/practice5-2.cpp.s
-.PHONY : week5/practice5-2.cpp.s
-
-week5/practice5-3.obj: week5/practice5-3.cpp.obj
-
-.PHONY : week5/practice5-3.obj
-
-# target to build an object file
-week5/practice5-3.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice5-3.dir\build.make CMakeFiles/practice5-3.dir/week5/practice5-3.cpp.obj
-.PHONY : week5/practice5-3.cpp.obj
-
-week5/practice5-3.i: week5/practice5-3.cpp.i
-
-.PHONY : week5/practice5-3.i
-
-# target to preprocess a source file
-week5/practice5-3.cpp.i:
-	$(MAKE) -f CMakeFiles\practice5-3.dir\build.make CMakeFiles/practice5-3.dir/week5/practice5-3.cpp.i
-.PHONY : week5/practice5-3.cpp.i
-
-week5/practice5-3.s: week5/practice5-3.cpp.s
-
-.PHONY : week5/practice5-3.s
-
-# target to generate assembly for a file
-week5/practice5-3.cpp.s:
-	$(MAKE) -f CMakeFiles\practice5-3.dir\build.make CMakeFiles/practice5-3.dir/week5/practice5-3.cpp.s
-.PHONY : week5/practice5-3.cpp.s
-
-week5/practice5-4.obj: week5/practice5-4.cpp.obj
-
-.PHONY : week5/practice5-4.obj
-
-# target to build an object file
-week5/practice5-4.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice5-4.dir\build.make CMakeFiles/practice5-4.dir/week5/practice5-4.cpp.obj
-.PHONY : week5/practice5-4.cpp.obj
-
-week5/practice5-4.i: week5/practice5-4.cpp.i
-
-.PHONY : week5/practice5-4.i
-
-# target to preprocess a source file
-week5/practice5-4.cpp.i:
-	$(MAKE) -f CMakeFiles\practice5-4.dir\build.make CMakeFiles/practice5-4.dir/week5/practice5-4.cpp.i
-.PHONY : week5/practice5-4.cpp.i
-
-week5/practice5-4.s: week5/practice5-4.cpp.s
-
-.PHONY : week5/practice5-4.s
-
-# target to generate assembly for a file
-week5/practice5-4.cpp.s:
-	$(MAKE) -f CMakeFiles\practice5-4.dir\build.make CMakeFiles/practice5-4.dir/week5/practice5-4.cpp.s
-.PHONY : week5/practice5-4.cpp.s
-
-week5/practice5-5.obj: week5/practice5-5.cpp.obj
-
-.PHONY : week5/practice5-5.obj
-
-# target to build an object file
-week5/practice5-5.cpp.obj:
-	$(MAKE) -f CMakeFiles\practice5-5.dir\build.make CMakeFiles/practice5-5.dir/week5/practice5-5.cpp.obj
-.PHONY : week5/practice5-5.cpp.obj
-
-week5/practice5-5.i: week5/practice5-5.cpp.i
-
-.PHONY : week5/practice5-5.i
-
-# target to preprocess a source file
-week5/practice5-5.cpp.i:
-	$(MAKE) -f CMakeFiles\practice5-5.dir\build.make CMakeFiles/practice5-5.dir/week5/practice5-5.cpp.i
-.PHONY : week5/practice5-5.cpp.i
-
-week5/practice5-5.s: week5/practice5-5.cpp.s
-
-.PHONY : week5/practice5-5.s
-
-# target to generate assembly for a file
-week5/practice5-5.cpp.s:
-	$(MAKE) -f CMakeFiles\practice5-5.dir\build.make CMakeFiles/practice5-5.dir/week5/practice5-5.cpp.s
-.PHONY : week5/practice5-5.cpp.s
+week6/practice6-4.cpp.s:
+	$(MAKE) -f CMakeFiles\practice6-4.dir\build.make CMakeFiles/practice6-4.dir/week6/practice6-4.cpp.s
+.PHONY : week6/practice6-4.cpp.s
 
 # Help Target
 help:
@@ -758,72 +235,20 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... DataStructure
-	@echo ... practice2
-	@echo ... practice2-3
-	@echo ... practice2-1
-	@echo ... practice2-2
-	@echo ... practice3-1
-	@echo ... practice2-4
-	@echo ... practice2-5
-	@echo ... practice3-2
-	@echo ... practice5-4
-	@echo ... practice4-1
-	@echo ... practice4-2
-	@echo ... practice5-2
-	@echo ... practice5-3
-	@echo ... practice5-1
-	@echo ... practice5-5
-	@echo ... edit_cache
+	@echo ... practice6-1
+	@echo ... practice6-4
 	@echo ... rebuild_cache
-	@echo ... week1/practice1-1.obj
-	@echo ... week1/practice1-1.i
-	@echo ... week1/practice1-1.s
-	@echo ... week1/practice1-2.obj
-	@echo ... week1/practice1-2.i
-	@echo ... week1/practice1-2.s
-	@echo ... week2/practice2-1.obj
-	@echo ... week2/practice2-1.i
-	@echo ... week2/practice2-1.s
-	@echo ... week2/practice2-2.obj
-	@echo ... week2/practice2-2.i
-	@echo ... week2/practice2-2.s
-	@echo ... week2/practice2-3.obj
-	@echo ... week2/practice2-3.i
-	@echo ... week2/practice2-3.s
-	@echo ... week2/practice2-4.obj
-	@echo ... week2/practice2-4.i
-	@echo ... week2/practice2-4.s
-	@echo ... week2/practice2-5.obj
-	@echo ... week2/practice2-5.i
-	@echo ... week2/practice2-5.s
-	@echo ... week3/practice3-1.obj
-	@echo ... week3/practice3-1.i
-	@echo ... week3/practice3-1.s
-	@echo ... week3/practice3-2.obj
-	@echo ... week3/practice3-2.i
-	@echo ... week3/practice3-2.s
-	@echo ... week4/practice4-1.obj
-	@echo ... week4/practice4-1.i
-	@echo ... week4/practice4-1.s
-	@echo ... week4/practice4-2.obj
-	@echo ... week4/practice4-2.i
-	@echo ... week4/practice4-2.s
-	@echo ... week5/practice5-1.obj
-	@echo ... week5/practice5-1.i
-	@echo ... week5/practice5-1.s
-	@echo ... week5/practice5-2.obj
-	@echo ... week5/practice5-2.i
-	@echo ... week5/practice5-2.s
-	@echo ... week5/practice5-3.obj
-	@echo ... week5/practice5-3.i
-	@echo ... week5/practice5-3.s
-	@echo ... week5/practice5-4.obj
-	@echo ... week5/practice5-4.i
-	@echo ... week5/practice5-4.s
-	@echo ... week5/practice5-5.obj
-	@echo ... week5/practice5-5.i
-	@echo ... week5/practice5-5.s
+	@echo ... practice6-2
+	@echo ... edit_cache
+	@echo ... week6/practice6-1.obj
+	@echo ... week6/practice6-1.i
+	@echo ... week6/practice6-1.s
+	@echo ... week6/practice6-2.obj
+	@echo ... week6/practice6-2.i
+	@echo ... week6/practice6-2.s
+	@echo ... week6/practice6-4.obj
+	@echo ... week6/practice6-4.i
+	@echo ... week6/practice6-4.s
 .PHONY : help
 
 

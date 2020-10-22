@@ -53,20 +53,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/DataStructure.dir/DependInfo.cmake"
-  "CMakeFiles/practice2.dir/DependInfo.cmake"
-  "CMakeFiles/practice2-3.dir/DependInfo.cmake"
-  "CMakeFiles/practice2-1.dir/DependInfo.cmake"
-  "CMakeFiles/practice2-2.dir/DependInfo.cmake"
-  "CMakeFiles/practice3-1.dir/DependInfo.cmake"
-  "CMakeFiles/practice2-4.dir/DependInfo.cmake"
-  "CMakeFiles/practice2-5.dir/DependInfo.cmake"
-  "CMakeFiles/practice3-2.dir/DependInfo.cmake"
-  "CMakeFiles/practice5-4.dir/DependInfo.cmake"
-  "CMakeFiles/practice4-1.dir/DependInfo.cmake"
-  "CMakeFiles/practice4-2.dir/DependInfo.cmake"
-  "CMakeFiles/practice5-2.dir/DependInfo.cmake"
-  "CMakeFiles/practice5-3.dir/DependInfo.cmake"
-  "CMakeFiles/practice5-1.dir/DependInfo.cmake"
-  "CMakeFiles/practice5-5.dir/DependInfo.cmake"
+  "CMakeFiles/practice6-1.dir/DependInfo.cmake"
+  "CMakeFiles/practice6-4.dir/DependInfo.cmake"
+  "CMakeFiles/practice6-2.dir/DependInfo.cmake"
   )

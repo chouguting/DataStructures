@@ -79,11 +79,13 @@ int main() {
     while (indexA <= finishA) {
         p[totalIndex] = {indexA->coef, indexA->expon};
         totalIndex += 1;
+        indexA++;
     }
 
     while (indexB <= finishB) {
         p[totalIndex] = {indexB->coef, indexB->expon};
         totalIndex += 1;
+        indexB++;
     }
     end_d = p + totalIndex - 1;
     printPoly(start_d, end_d);
