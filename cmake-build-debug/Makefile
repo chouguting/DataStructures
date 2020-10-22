@@ -148,6 +148,19 @@ practice6-2/fast:
 	$(MAKE) -f CMakeFiles\practice6-2.dir\build.make CMakeFiles/practice6-2.dir/build
 .PHONY : practice6-2/fast
 
+#=============================================================================
+# Target rules for targets named practice6-3
+
+# Build rule for target.
+practice6-3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice6-3
+.PHONY : practice6-3
+
+# fast build rule for target.
+practice6-3/fast:
+	$(MAKE) -f CMakeFiles\practice6-3.dir\build.make CMakeFiles/practice6-3.dir/build
+.PHONY : practice6-3/fast
+
 week6/practice6-1.obj: week6/practice6-1.cpp.obj
 
 .PHONY : week6/practice6-1.obj
@@ -202,6 +215,33 @@ week6/practice6-2.cpp.s:
 	$(MAKE) -f CMakeFiles\practice6-2.dir\build.make CMakeFiles/practice6-2.dir/week6/practice6-2.cpp.s
 .PHONY : week6/practice6-2.cpp.s
 
+week6/practice6-3.obj: week6/practice6-3.cpp.obj
+
+.PHONY : week6/practice6-3.obj
+
+# target to build an object file
+week6/practice6-3.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice6-3.dir\build.make CMakeFiles/practice6-3.dir/week6/practice6-3.cpp.obj
+.PHONY : week6/practice6-3.cpp.obj
+
+week6/practice6-3.i: week6/practice6-3.cpp.i
+
+.PHONY : week6/practice6-3.i
+
+# target to preprocess a source file
+week6/practice6-3.cpp.i:
+	$(MAKE) -f CMakeFiles\practice6-3.dir\build.make CMakeFiles/practice6-3.dir/week6/practice6-3.cpp.i
+.PHONY : week6/practice6-3.cpp.i
+
+week6/practice6-3.s: week6/practice6-3.cpp.s
+
+.PHONY : week6/practice6-3.s
+
+# target to generate assembly for a file
+week6/practice6-3.cpp.s:
+	$(MAKE) -f CMakeFiles\practice6-3.dir\build.make CMakeFiles/practice6-3.dir/week6/practice6-3.cpp.s
+.PHONY : week6/practice6-3.cpp.s
+
 week6/practice6-4.obj: week6/practice6-4.cpp.obj
 
 .PHONY : week6/practice6-4.obj
@@ -239,6 +279,7 @@ help:
 	@echo ... practice6-4
 	@echo ... rebuild_cache
 	@echo ... practice6-2
+	@echo ... practice6-3
 	@echo ... edit_cache
 	@echo ... week6/practice6-1.obj
 	@echo ... week6/practice6-1.i
@@ -246,6 +287,9 @@ help:
 	@echo ... week6/practice6-2.obj
 	@echo ... week6/practice6-2.i
 	@echo ... week6/practice6-2.s
+	@echo ... week6/practice6-3.obj
+	@echo ... week6/practice6-3.i
+	@echo ... week6/practice6-3.s
 	@echo ... week6/practice6-4.obj
 	@echo ... week6/practice6-4.i
 	@echo ... week6/practice6-4.s
