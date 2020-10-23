@@ -1,109 +1,96 @@
 #include <iostream>
+#include <cstring>
+#include <vector>
+#include <map>
+#include <set>
 
 using namespace std;
 
-class Item {
-public:
-    char name;
-    float value;
-    float weight;
-
-    Item(char name, float value, float weight) : name(name), value(value), weight(weight) {}
-
-    Item() {}
-};
-
-class StoragePlace {
-public:
-    Item data[10];
-    int top = -1;
-    int maxWeight;
-
-    StoragePlace(int maxW) {
-        stackInitial();
-        maxWeight = maxW;
-    }
-
-    int stackInitial() {
-        return 1;
-    }
-
-    float getWeight() {
-        float weightSum = 0;
-        for (int i = 0; i <= top; i++) {
-            weightSum += data[i].weight;
-        }
-        return weightSum;
-    }
-
-    bool isEmpty() {
-        return (top == -1) ? true : false;
-    }
-
-    bool push(Item item) {
-        if (getWeight() + item.weight > maxWeight) {
-            return false;
-        } else {
-            data[++top] = item;
-            return true;
-        }
-    }
-
-    Item pop() {
-        if (!isEmpty()) {
-            top--;
-        }
-        return data[top + 1];
-    }
-
-    bool topOneWorthToBeReplaced(Item item) {
-        if (data[top].value < item.value && (getWeight() - data[top].weight + item.weight) <= 20) {
-            return true;
-        }
-        return false;
-    }
-
-
-    void printContent() {
-        int i;
-        float valueSum = 0;
-        for (i = 0; i <= top; i++) {
-            printf("%c %.1f %.1f\n", data[i].name, data[i].value, data[i].weight);
-            valueSum += data[i].value;
-        }
-        printf("weight:%.1f\n", getWeight());
-        printf("value:%.1f\n", valueSum);
-
-    }
-};
-
-
 int main() {
-    StoragePlace backPack(20);
-    for (int i = 0; i < 5; i++) {
-        char name;
-        float value, weight;
-        StoragePlace floor(1000);
-        cin >> name >> value >> weight;
-        getchar();
-        Item itemForNow(name, value, weight);
-        if (backPack.push(itemForNow)) {
-            continue;
-        } else {
-            while (!backPack.topOneWorthToBeReplaced(itemForNow)) {
-                if (backPack.isEmpty())break;
-                floor.push(backPack.pop());
-            }
-            if (backPack.topOneWorthToBeReplaced(itemForNow)) {
-                backPack.pop();
-                backPack.push(itemForNow);
-            }
-            int takeIndex = 0;
-            while (takeIndex <= floor.top && backPack.push(floor.data[takeIndex])) {
-                takeIndex++;
-            }
+    char prefix[100];
+    fgets(prefix, 100, stdin);
+    strtok(prefix, "\r\n");
+    char suffix[100];
+    fgets(suffix, 100, stdin);
+    strtok(suffix, "\r\n");
 
+    int characterFrequency;
+    cin >> characterFrequency;
+    getchar();
+    getchar();
+
+    int wordFrequency;
+    cin >> wordFrequency;
+    getchar();
+    getchar();
+
+    char data[10000];
+    fgets(data, 10000, stdin);
+    strtok(data, "\r\n");
+    int characterCount[26] = {};
+    string dataStr(data);
+
+    set<string> prefixes;
+    set<string> suffixes;
+    map<string, int> wordCount;
+    set<string> wordSets;
+
+
+    char *p;
+    char punc[2] = " ";
+    p = strtok(data, punc);
+    while (p != NULL) {
+        char *findSomething;
+        findSomething = strstr(p, prefix);
+        if (findSomething != NULL && findSomething == p) {
+            string temp(p);
+            prefixes.insert(temp);
+        }
+        findSomething = strstr(p, suffix);
+        if (findSomething != NULL && findSomething == p + strlen(p) - strlen(suffix)) {
+            string temp(p);
+            suffixes.insert(temp);
+        }
+        for (int j = 0; j < strlen(p); j++) {
+            characterCount[p[j] - 'a']++;
+        }
+
+        auto iter = wordCount.find(p);
+        if (iter == wordCount.end()) {
+            string temp(p);
+            wordSets.insert(temp);
+            wordCount[temp] = 1;
+        } else {
+            string temp(p);
+            wordCount[temp]++;
+        }
+        p = strtok(NULL, punc);
+
+    }
+
+    printf("prefix of %s:\n", prefix);
+    for (auto it = prefixes.begin(); it != prefixes.end(); ++it) {
+        cout << *it << endl;
+    }
+    printf("suffix of %s:\n", suffix);
+    for (auto it = suffixes.begin(); it != suffixes.end(); ++it) {
+        cout << *it << endl;
+    }
+
+    printf("character frequency over %d:\n", characterFrequency);
+    for (int i = 0; i < 26; i++) {
+        if (characterCount[i] >= characterFrequency) {
+            printf("%c,%d\n", 'a' + i, characterCount[i]);
         }
     }
-    backPack.printContent();
+
+
+    printf("word frequency over %d:\n", wordFrequency);
+    for (auto it = wordSets.begin(); it != wordSets.end(); ++it) {
+        string findStr = *it;
+        auto iter = wordCount.find(findStr);
+        if (iter->second >= wordFrequency) {
+            cout << findStr << "," << iter->second << endl;
+        }
+    }
 }
