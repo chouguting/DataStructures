@@ -11,3 +11,8 @@ add_executable(practice6-3 week6/practice6-3.cpp)
 
 add_executable(practice6-5 week6/practice6-5.cpp)
 add_executable(practice4-2 week4/practice4-2.cpp)
+add_executable(practice7-1 week7/practice7-1.cpp)
+add_executable(practice7-3 week7/practice7-3.cpp)
+add_executable(practice7-4 week7/practice7-4.cpp)
+add_executable(practice7-2 week7/practice7-2.cpp)
+add_executable(practice7-5 week7/practice7-5.c)

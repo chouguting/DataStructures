@@ -53,21 +53,31 @@ CMAKE_BINARY_DIR = C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/practice6-1.dir/all
+all: CMakeFiles/practice7-1.dir/all
 all: CMakeFiles/practice4-2.dir/all
 all: CMakeFiles/practice6-4.dir/all
 all: CMakeFiles/practice6-2.dir/all
 all: CMakeFiles/practice6-3.dir/all
 all: CMakeFiles/practice6-5.dir/all
+all: CMakeFiles/practice7-3.dir/all
+all: CMakeFiles/practice7-4.dir/all
+all: CMakeFiles/practice7-2.dir/all
+all: CMakeFiles/practice7-5.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/practice6-1.dir/clean
+clean: CMakeFiles/practice7-1.dir/clean
 clean: CMakeFiles/practice4-2.dir/clean
 clean: CMakeFiles/practice6-4.dir/clean
 clean: CMakeFiles/practice6-2.dir/clean
 clean: CMakeFiles/practice6-3.dir/clean
 clean: CMakeFiles/practice6-5.dir/clean
+clean: CMakeFiles/practice7-3.dir/clean
+clean: CMakeFiles/practice7-4.dir/clean
+clean: CMakeFiles/practice7-2.dir/clean
+clean: CMakeFiles/practice7-5.dir/clean
 
 .PHONY : clean
 
@@ -102,6 +112,33 @@ practice6-1: CMakeFiles/practice6-1.dir/rule
 CMakeFiles/practice6-1.dir/clean:
 	$(MAKE) -f CMakeFiles\practice6-1.dir\build.make CMakeFiles/practice6-1.dir/clean
 .PHONY : CMakeFiles/practice6-1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice7-1.dir
+
+# All Build rule for target.
+CMakeFiles/practice7-1.dir/all:
+	$(MAKE) -f CMakeFiles\practice7-1.dir\build.make CMakeFiles/practice7-1.dir/depend
+	$(MAKE) -f CMakeFiles\practice7-1.dir\build.make CMakeFiles/practice7-1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target practice7-1"
+.PHONY : CMakeFiles/practice7-1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice7-1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/practice7-1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/practice7-1.dir/rule
+
+# Convenience name for target.
+practice7-1: CMakeFiles/practice7-1.dir/rule
+
+.PHONY : practice7-1
+
+# clean rule for target.
+CMakeFiles/practice7-1.dir/clean:
+	$(MAKE) -f CMakeFiles\practice7-1.dir\build.make CMakeFiles/practice7-1.dir/clean
+.PHONY : CMakeFiles/practice7-1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/practice4-2.dir
@@ -237,6 +274,114 @@ practice6-5: CMakeFiles/practice6-5.dir/rule
 CMakeFiles/practice6-5.dir/clean:
 	$(MAKE) -f CMakeFiles\practice6-5.dir\build.make CMakeFiles/practice6-5.dir/clean
 .PHONY : CMakeFiles/practice6-5.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice7-3.dir
+
+# All Build rule for target.
+CMakeFiles/practice7-3.dir/all:
+	$(MAKE) -f CMakeFiles\practice7-3.dir\build.make CMakeFiles/practice7-3.dir/depend
+	$(MAKE) -f CMakeFiles\practice7-3.dir\build.make CMakeFiles/practice7-3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target practice7-3"
+.PHONY : CMakeFiles/practice7-3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice7-3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/practice7-3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/practice7-3.dir/rule
+
+# Convenience name for target.
+practice7-3: CMakeFiles/practice7-3.dir/rule
+
+.PHONY : practice7-3
+
+# clean rule for target.
+CMakeFiles/practice7-3.dir/clean:
+	$(MAKE) -f CMakeFiles\practice7-3.dir\build.make CMakeFiles/practice7-3.dir/clean
+.PHONY : CMakeFiles/practice7-3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice7-4.dir
+
+# All Build rule for target.
+CMakeFiles/practice7-4.dir/all:
+	$(MAKE) -f CMakeFiles\practice7-4.dir\build.make CMakeFiles/practice7-4.dir/depend
+	$(MAKE) -f CMakeFiles\practice7-4.dir\build.make CMakeFiles/practice7-4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target practice7-4"
+.PHONY : CMakeFiles/practice7-4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice7-4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/practice7-4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/practice7-4.dir/rule
+
+# Convenience name for target.
+practice7-4: CMakeFiles/practice7-4.dir/rule
+
+.PHONY : practice7-4
+
+# clean rule for target.
+CMakeFiles/practice7-4.dir/clean:
+	$(MAKE) -f CMakeFiles\practice7-4.dir\build.make CMakeFiles/practice7-4.dir/clean
+.PHONY : CMakeFiles/practice7-4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice7-2.dir
+
+# All Build rule for target.
+CMakeFiles/practice7-2.dir/all:
+	$(MAKE) -f CMakeFiles\practice7-2.dir\build.make CMakeFiles/practice7-2.dir/depend
+	$(MAKE) -f CMakeFiles\practice7-2.dir\build.make CMakeFiles/practice7-2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target practice7-2"
+.PHONY : CMakeFiles/practice7-2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice7-2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/practice7-2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/practice7-2.dir/rule
+
+# Convenience name for target.
+practice7-2: CMakeFiles/practice7-2.dir/rule
+
+.PHONY : practice7-2
+
+# clean rule for target.
+CMakeFiles/practice7-2.dir/clean:
+	$(MAKE) -f CMakeFiles\practice7-2.dir\build.make CMakeFiles/practice7-2.dir/clean
+.PHONY : CMakeFiles/practice7-2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/practice7-5.dir
+
+# All Build rule for target.
+CMakeFiles/practice7-5.dir/all:
+	$(MAKE) -f CMakeFiles\practice7-5.dir\build.make CMakeFiles/practice7-5.dir/depend
+	$(MAKE) -f CMakeFiles\practice7-5.dir\build.make CMakeFiles/practice7-5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target practice7-5"
+.PHONY : CMakeFiles/practice7-5.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice7-5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/practice7-5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/practice7-5.dir/rule
+
+# Convenience name for target.
+practice7-5: CMakeFiles/practice7-5.dir/rule
+
+.PHONY : practice7-5
+
+# clean rule for target.
+CMakeFiles/practice7-5.dir/clean:
+	$(MAKE) -f CMakeFiles\practice7-5.dir\build.make CMakeFiles/practice7-5.dir/clean
+.PHONY : CMakeFiles/practice7-5.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
