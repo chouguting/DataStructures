@@ -20,12 +20,7 @@ public:
     int maxWeight;
 
     StoragePlace(int maxW) {
-        stackInitial();
         maxWeight = maxW;
-    }
-
-    int stackInitial() {
-        return 1;
     }
 
     float getWeight() {
@@ -41,28 +36,20 @@ public:
     }
 
     bool push(Item item) {
-        if (getWeight() + item.weight > maxWeight) {
-            return false;
-        } else {
-            data[++top] = item;
-            return true;
-        }
+        if (getWeight() + item.weight > maxWeight)return false;
+        data[++top] = item;
+        return true;
     }
 
     Item pop() {
-        if (!isEmpty()) {
-            top--;
-        }
+        if (!isEmpty())top--;
         return data[top + 1];
     }
 
     bool topOneWorthToBeReplaced(Item item) {
-        if (data[top].value < item.value && (getWeight() - data[top].weight + item.weight) <= 20) {
-            return true;
-        }
+        if (data[top].value < item.value && (getWeight() - data[top].weight + item.weight) <= 20)return true;
         return false;
     }
-
 
     void printContent() {
         int i;
@@ -73,7 +60,6 @@ public:
         }
         printf("weight:%.1f\n", getWeight());
         printf("value:%.1f\n", valueSum);
-
     }
 };
 
@@ -102,7 +88,6 @@ int main() {
             while (takeIndex <= floor.top && backPack.push(floor.data[takeIndex])) {
                 takeIndex++;
             }
-
         }
     }
     backPack.printContent();
