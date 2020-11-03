@@ -11,11 +11,11 @@ class Stack {
     int top;
     point data[STACK_SIZE];
 public:
-    int isEmpty() {
+    bool isEmpty() {
         return (top == -1) ? 1 : 0;
     }
 
-    int isFull() {
+    bool isFull() {
         return (top == STACK_SIZE - 1) ? 1 : 0;
     }
 
