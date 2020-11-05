@@ -252,6 +252,58 @@ practice7-5/fast:
 	$(MAKE) -f CMakeFiles\practice7-5.dir\build.make CMakeFiles/practice7-5.dir/build
 .PHONY : practice7-5/fast
 
+#=============================================================================
+# Target rules for targets named practice8-1
+
+# Build rule for target.
+practice8-1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice8-1
+.PHONY : practice8-1
+
+# fast build rule for target.
+practice8-1/fast:
+	$(MAKE) -f CMakeFiles\practice8-1.dir\build.make CMakeFiles/practice8-1.dir/build
+.PHONY : practice8-1/fast
+
+#=============================================================================
+# Target rules for targets named practice8-2
+
+# Build rule for target.
+practice8-2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice8-2
+.PHONY : practice8-2
+
+# fast build rule for target.
+practice8-2/fast:
+	$(MAKE) -f CMakeFiles\practice8-2.dir\build.make CMakeFiles/practice8-2.dir/build
+.PHONY : practice8-2/fast
+
+#=============================================================================
+# Target rules for targets named practice8-3
+
+# Build rule for target.
+practice8-3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice8-3
+.PHONY : practice8-3
+
+# fast build rule for target.
+practice8-3/fast:
+	$(MAKE) -f CMakeFiles\practice8-3.dir\build.make CMakeFiles/practice8-3.dir/build
+.PHONY : practice8-3/fast
+
+#=============================================================================
+# Target rules for targets named practice8-5
+
+# Build rule for target.
+practice8-5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 practice8-5
+.PHONY : practice8-5
+
+# fast build rule for target.
+practice8-5/fast:
+	$(MAKE) -f CMakeFiles\practice8-5.dir\build.make CMakeFiles/practice8-5.dir/build
+.PHONY : practice8-5/fast
+
 week4/practice4-2.obj: week4/practice4-2.cpp.obj
 
 .PHONY : week4/practice4-2.obj
@@ -549,6 +601,114 @@ week7/practice7-5.c.s:
 	$(MAKE) -f CMakeFiles\practice7-5.dir\build.make CMakeFiles/practice7-5.dir/week7/practice7-5.c.s
 .PHONY : week7/practice7-5.c.s
 
+week8/practice8-1.obj: week8/practice8-1.cpp.obj
+
+.PHONY : week8/practice8-1.obj
+
+# target to build an object file
+week8/practice8-1.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice8-1.dir\build.make CMakeFiles/practice8-1.dir/week8/practice8-1.cpp.obj
+.PHONY : week8/practice8-1.cpp.obj
+
+week8/practice8-1.i: week8/practice8-1.cpp.i
+
+.PHONY : week8/practice8-1.i
+
+# target to preprocess a source file
+week8/practice8-1.cpp.i:
+	$(MAKE) -f CMakeFiles\practice8-1.dir\build.make CMakeFiles/practice8-1.dir/week8/practice8-1.cpp.i
+.PHONY : week8/practice8-1.cpp.i
+
+week8/practice8-1.s: week8/practice8-1.cpp.s
+
+.PHONY : week8/practice8-1.s
+
+# target to generate assembly for a file
+week8/practice8-1.cpp.s:
+	$(MAKE) -f CMakeFiles\practice8-1.dir\build.make CMakeFiles/practice8-1.dir/week8/practice8-1.cpp.s
+.PHONY : week8/practice8-1.cpp.s
+
+week8/practice8-2.obj: week8/practice8-2.cpp.obj
+
+.PHONY : week8/practice8-2.obj
+
+# target to build an object file
+week8/practice8-2.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice8-2.dir\build.make CMakeFiles/practice8-2.dir/week8/practice8-2.cpp.obj
+.PHONY : week8/practice8-2.cpp.obj
+
+week8/practice8-2.i: week8/practice8-2.cpp.i
+
+.PHONY : week8/practice8-2.i
+
+# target to preprocess a source file
+week8/practice8-2.cpp.i:
+	$(MAKE) -f CMakeFiles\practice8-2.dir\build.make CMakeFiles/practice8-2.dir/week8/practice8-2.cpp.i
+.PHONY : week8/practice8-2.cpp.i
+
+week8/practice8-2.s: week8/practice8-2.cpp.s
+
+.PHONY : week8/practice8-2.s
+
+# target to generate assembly for a file
+week8/practice8-2.cpp.s:
+	$(MAKE) -f CMakeFiles\practice8-2.dir\build.make CMakeFiles/practice8-2.dir/week8/practice8-2.cpp.s
+.PHONY : week8/practice8-2.cpp.s
+
+week8/practice8-3.obj: week8/practice8-3.cpp.obj
+
+.PHONY : week8/practice8-3.obj
+
+# target to build an object file
+week8/practice8-3.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice8-3.dir\build.make CMakeFiles/practice8-3.dir/week8/practice8-3.cpp.obj
+.PHONY : week8/practice8-3.cpp.obj
+
+week8/practice8-3.i: week8/practice8-3.cpp.i
+
+.PHONY : week8/practice8-3.i
+
+# target to preprocess a source file
+week8/practice8-3.cpp.i:
+	$(MAKE) -f CMakeFiles\practice8-3.dir\build.make CMakeFiles/practice8-3.dir/week8/practice8-3.cpp.i
+.PHONY : week8/practice8-3.cpp.i
+
+week8/practice8-3.s: week8/practice8-3.cpp.s
+
+.PHONY : week8/practice8-3.s
+
+# target to generate assembly for a file
+week8/practice8-3.cpp.s:
+	$(MAKE) -f CMakeFiles\practice8-3.dir\build.make CMakeFiles/practice8-3.dir/week8/practice8-3.cpp.s
+.PHONY : week8/practice8-3.cpp.s
+
+week8/practice8-5.obj: week8/practice8-5.cpp.obj
+
+.PHONY : week8/practice8-5.obj
+
+# target to build an object file
+week8/practice8-5.cpp.obj:
+	$(MAKE) -f CMakeFiles\practice8-5.dir\build.make CMakeFiles/practice8-5.dir/week8/practice8-5.cpp.obj
+.PHONY : week8/practice8-5.cpp.obj
+
+week8/practice8-5.i: week8/practice8-5.cpp.i
+
+.PHONY : week8/practice8-5.i
+
+# target to preprocess a source file
+week8/practice8-5.cpp.i:
+	$(MAKE) -f CMakeFiles\practice8-5.dir\build.make CMakeFiles/practice8-5.dir/week8/practice8-5.cpp.i
+.PHONY : week8/practice8-5.cpp.i
+
+week8/practice8-5.s: week8/practice8-5.cpp.s
+
+.PHONY : week8/practice8-5.s
+
+# target to generate assembly for a file
+week8/practice8-5.cpp.s:
+	$(MAKE) -f CMakeFiles\practice8-5.dir\build.make CMakeFiles/practice8-5.dir/week8/practice8-5.cpp.s
+.PHONY : week8/practice8-5.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -567,6 +727,10 @@ help:
 	@echo ... practice7-4
 	@echo ... practice7-2
 	@echo ... practice7-5
+	@echo ... practice8-1
+	@echo ... practice8-2
+	@echo ... practice8-3
+	@echo ... practice8-5
 	@echo ... rebuild_cache
 	@echo ... week4/practice4-2.obj
 	@echo ... week4/practice4-2.i
@@ -601,6 +765,18 @@ help:
 	@echo ... week7/practice7-5.obj
 	@echo ... week7/practice7-5.i
 	@echo ... week7/practice7-5.s
+	@echo ... week8/practice8-1.obj
+	@echo ... week8/practice8-1.i
+	@echo ... week8/practice8-1.s
+	@echo ... week8/practice8-2.obj
+	@echo ... week8/practice8-2.i
+	@echo ... week8/practice8-2.s
+	@echo ... week8/practice8-3.obj
+	@echo ... week8/practice8-3.i
+	@echo ... week8/practice8-3.s
+	@echo ... week8/practice8-5.obj
+	@echo ... week8/practice8-5.i
+	@echo ... week8/practice8-5.s
 .PHONY : help
 
 
