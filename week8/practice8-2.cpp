@@ -20,19 +20,16 @@ public:
         data[++top] = pushNumber;
         return true;
     }
-
     bool pop(int &changeNum) {
         if (isEmpty() == 1)return false;
         changeNum = data[top--];
         return true;
     }
-
     bool pop() {
         if (isEmpty() == 1)return false;
         top--;
         return true;
     }
-
     Stack() {
         top = -1;
     }

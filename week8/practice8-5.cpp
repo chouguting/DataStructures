@@ -62,15 +62,15 @@ int main() {
                 if (theStr[i] >= '0' && theStr[i] <= '9') {
                     dataSet.push(to_string(theStr[i] - '0'));
                 } else {
-                    if (dataSet.top >= 0 && dataSet.data[dataSet.top].length() > 1) {
-                        dataSet.addParentheses(dataSet.top);
-                    }
                     string a = dataSet.pop();
                     string b = dataSet.pop();
                     dataSet.push(a + theStr[i] + b);
+                    if (i != 0) {
+                        dataSet.addParentheses(dataSet.top);
+                    }
                 }
             }
-            cout << dataSet.pop();
+            cout << dataSet.pop() << endl;
         }
 
         if (type == postOrder) {
@@ -78,13 +78,13 @@ int main() {
                 if (theStr[i] >= '0' && theStr[i] <= '9') {
                     dataSet.push(to_string(theStr[i] - '0'));
                 } else {
-                    if (dataSet.top - 1 >= 0 && dataSet.data[dataSet.top - 1].length() > 1) {
-                        dataSet.addParentheses(dataSet.top - 1);
-                    }
                     dataSet.push(dataSet.pop() + theStr[i] + dataSet.pop());
+                    if (i != strlen(theStr) - 1) {
+                        dataSet.addParentheses(dataSet.top);
+                    }
                 }
             }
-            cout << dataSet.pop();
+            cout << dataSet.pop() << endl;
         }
     }
 }
