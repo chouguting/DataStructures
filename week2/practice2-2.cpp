@@ -5,6 +5,7 @@ void swap(int *a,int *b){
     *a=*b;
     *b=temp;
 }
+
 void selectionSort(int* array,int length){
     for(int i=0;i<length-1;i++){
         int min=array[i];
@@ -46,7 +47,6 @@ int main(){
         cin>>arr[i];
     }
     selectionSort(arr,size);
-
     cout<<binarySearch(arr,searchNum,size)<<endl;
     delete[] arr;
     return 0;

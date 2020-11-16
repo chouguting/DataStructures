@@ -1,35 +1,40 @@
 #include <iostream>
+
 using namespace std;
-void swap(int *a,int *b){
-    int temp=*a;
-    *a=*b;
-    *b=temp;
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
-void insertionSort(int* array,int length){
-    int* arr2=new int[length];
-    int currentSize=0;
-    arr2[0]=array[0];
+
+//插入排序法
+void insertionSort(int *array, int length) {
+    //先弄一個暫時的陣列
+    int *arr2 = new int[length];
+    int currentSize = 0;
+    arr2[0] = array[0];
     currentSize++;
-    for(int i=1;i<length;i++){
-        int insertPlace=0;
-        int x=0;
-        while(array[i]>arr2[insertPlace]){
-            if(insertPlace>=currentSize){
+    for (int i = 1; i < length; i++) {
+        int insertPlace = 0;
+        int x = 0;
+        while (array[i] > arr2[insertPlace]) {
+            if(insertPlace >= currentSize){
                 break;
             }
             insertPlace++;
         }
         //insertPlace-=1;
-        for(int j=currentSize-1;j>=insertPlace;j--){
-            if(j<length-1){
-                swap(&arr2[j+1],&arr2[j]);
+        for(int j= currentSize - 1; j >= insertPlace; j--){
+            if(j < length - 1){
+                swap(&arr2[j + 1], &arr2[j]);
             }
         }
         arr2[insertPlace]=array[i];
         currentSize++;
 
         if(i<=2){
-            for(int j=0;j<currentSize;j++){
+            for(int j=0; j<currentSize; j++){
                 cout<<arr2[j];
                 if(j!=currentSize-1){
                     cout<<" ";
@@ -40,7 +45,7 @@ void insertionSort(int* array,int length){
         }
 
     }
-    for(int i=0;i<length;i++){
+    for(int i=0; i<length; i++){
         array[i]=arr2[i];
     }
     delete[] arr2;
