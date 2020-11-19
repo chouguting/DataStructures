@@ -21,4 +21,8 @@ C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice2-1.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice2-3-2.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice2-2.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/linkedListTest.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice9-1.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice9-2.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice9-4.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
