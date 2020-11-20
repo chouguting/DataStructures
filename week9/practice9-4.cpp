@@ -77,7 +77,6 @@ public:
             temp->nextPtr = locator->nextPtr;
             locator->nextPtr = temp;
         }
-
         return true;
     }
 
@@ -101,7 +100,7 @@ public:
         return ((locator->value / locator->weight) < (item.value / item.weight)) ? true : false;
     }
 
-
+    //這邊這麼麻煩是因為我LIST方向反了
     void printContent() {
         float valueSum = 0;
         int counter = 0;
