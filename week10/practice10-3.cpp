@@ -4,13 +4,13 @@
 
 using namespace std;
 
-struct listNode {
-    string data;
-    int count;
-    listNode *nextPtr;
-};
 
 class LinkedList {
+    struct listNode {
+        string data;
+        int count;
+        listNode *nextPtr;
+    };
 public:
     listNode *frontPtr;
 
