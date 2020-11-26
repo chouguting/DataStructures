@@ -43,14 +43,13 @@ public:
         locator->nextPtr = temp;
     }
 
-
     void printPoly() {
         for (listNode *i = frontPtr; i != nullptr; i = i->nextPtr) {
             if (i->coef == 0) {
                 continue;
             }
             if (i != frontPtr && i->coef >= 0) {
-                printf("+");
+                cout << " + ";
             }
             printf("%d", i->coef);
             if (i->expo > 0) {
@@ -111,9 +110,13 @@ public:
 
 };
 
+ostream &operator<<(ostream &out, LinkedPoly a) {
+    a.printPoly();
+    return out;
+}
+
 
 int main() {
-
     LinkedPoly A;
     LinkedPoly B;
     while (true) {
@@ -123,7 +126,6 @@ int main() {
         cin >> expo;
         A.add(coef, expo);
     }
-
     while (true) {
         int coef, expo;
         cin >> coef;
@@ -131,10 +133,6 @@ int main() {
         cin >> expo;
         B.add(coef, expo);
     }
-
-    LinkedPoly addResult = A + B;
-    addResult.printPoly();
-
-    LinkedPoly multResult = A * B;
-    multResult.printPoly();
+    cout << "add = " << A + B;
+    cout << "mult = " << A * B;
 }
