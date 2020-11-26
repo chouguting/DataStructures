@@ -1,9 +1,5 @@
 #include <iostream>
-
 using namespace std;
-
-using namespace std;
-
 
 class LinkedPoly {
     struct listNode {
@@ -114,7 +110,6 @@ ostream &operator<<(ostream &out, LinkedPoly a) {
     a.printPoly();
     return out;
 }
-
 
 int main() {
     LinkedPoly A;
