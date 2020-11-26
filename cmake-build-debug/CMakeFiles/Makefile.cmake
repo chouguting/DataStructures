@@ -64,6 +64,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/practice7-3.dir/DependInfo.cmake"
   "CMakeFiles/practice7-4.dir/DependInfo.cmake"
   "CMakeFiles/practice7-2.dir/DependInfo.cmake"
+  "CMakeFiles/practice10-1.dir/DependInfo.cmake"
   "CMakeFiles/practice7-5.dir/DependInfo.cmake"
   "CMakeFiles/practice8-1.dir/DependInfo.cmake"
   "CMakeFiles/practice1-2-2.dir/DependInfo.cmake"
@@ -80,4 +81,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/practice9-1.dir/DependInfo.cmake"
   "CMakeFiles/practice9-2.dir/DependInfo.cmake"
   "CMakeFiles/practice9-4.dir/DependInfo.cmake"
+  "CMakeFiles/stringTest.dir/DependInfo.cmake"
+  "CMakeFiles/practice10-4.dir/DependInfo.cmake"
+  "CMakeFiles/practice10-3.dir/DependInfo.cmake"
+  "CMakeFiles/practice10-2.dir/DependInfo.cmake"
   )

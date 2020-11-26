@@ -10,6 +10,7 @@ C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice7-3.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice7-4.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice7-2.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice10-1.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice7-5.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice8-1.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice1-2-2.dir
@@ -26,4 +27,8 @@ C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/linkedLi
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice9-1.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice9-2.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice9-4.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/stringTest.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice10-4.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice10-3.dir
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice10-2.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

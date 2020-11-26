@@ -273,6 +273,19 @@ practice7-2/fast:
 .PHONY : practice7-2/fast
 
 #=============================================================================
+# Target rules for targets named practice10-1
+
+# Build rule for target.
+practice10-1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice10-1
+.PHONY : practice10-1
+
+# fast build rule for target.
+practice10-1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-1.dir\build.make CMakeFiles/practice10-1.dir/build
+.PHONY : practice10-1/fast
+
+#=============================================================================
 # Target rules for targets named practice7-5
 
 # Build rule for target.
@@ -480,6 +493,58 @@ practice9-4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice9-4.dir\build.make CMakeFiles/practice9-4.dir/build
 .PHONY : practice9-4/fast
 
+#=============================================================================
+# Target rules for targets named stringTest
+
+# Build rule for target.
+stringTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 stringTest
+.PHONY : stringTest
+
+# fast build rule for target.
+stringTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\stringTest.dir\build.make CMakeFiles/stringTest.dir/build
+.PHONY : stringTest/fast
+
+#=============================================================================
+# Target rules for targets named practice10-4
+
+# Build rule for target.
+practice10-4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice10-4
+.PHONY : practice10-4
+
+# fast build rule for target.
+practice10-4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-4.dir\build.make CMakeFiles/practice10-4.dir/build
+.PHONY : practice10-4/fast
+
+#=============================================================================
+# Target rules for targets named practice10-3
+
+# Build rule for target.
+practice10-3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice10-3
+.PHONY : practice10-3
+
+# fast build rule for target.
+practice10-3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-3.dir\build.make CMakeFiles/practice10-3.dir/build
+.PHONY : practice10-3/fast
+
+#=============================================================================
+# Target rules for targets named practice10-2
+
+# Build rule for target.
+practice10-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice10-2
+.PHONY : practice10-2
+
+# fast build rule for target.
+practice10-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-2.dir\build.make CMakeFiles/practice10-2.dir/build
+.PHONY : practice10-2/fast
+
 EX/linkedListTest.obj: EX/linkedListTest.cpp.obj
 
 .PHONY : EX/linkedListTest.obj
@@ -506,6 +571,33 @@ EX/linkedListTest.s: EX/linkedListTest.cpp.s
 EX/linkedListTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\linkedListTest.dir\build.make CMakeFiles/linkedListTest.dir/EX/linkedListTest.cpp.s
 .PHONY : EX/linkedListTest.cpp.s
+
+EX/stringTest.obj: EX/stringTest.cpp.obj
+
+.PHONY : EX/stringTest.obj
+
+# target to build an object file
+EX/stringTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\stringTest.dir\build.make CMakeFiles/stringTest.dir/EX/stringTest.cpp.obj
+.PHONY : EX/stringTest.cpp.obj
+
+EX/stringTest.i: EX/stringTest.cpp.i
+
+.PHONY : EX/stringTest.i
+
+# target to preprocess a source file
+EX/stringTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\stringTest.dir\build.make CMakeFiles/stringTest.dir/EX/stringTest.cpp.i
+.PHONY : EX/stringTest.cpp.i
+
+EX/stringTest.s: EX/stringTest.cpp.s
+
+.PHONY : EX/stringTest.s
+
+# target to generate assembly for a file
+EX/stringTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\stringTest.dir\build.make CMakeFiles/stringTest.dir/EX/stringTest.cpp.s
+.PHONY : EX/stringTest.cpp.s
 
 week1/practice1-1.obj: week1/practice1-1.cpp.obj
 
@@ -587,6 +679,114 @@ week1/practice1-2.s: week1/practice1-2.cpp.s
 week1/practice1-2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice1-2.dir\build.make CMakeFiles/practice1-2.dir/week1/practice1-2.cpp.s
 .PHONY : week1/practice1-2.cpp.s
+
+week10/practice10-1.obj: week10/practice10-1.cpp.obj
+
+.PHONY : week10/practice10-1.obj
+
+# target to build an object file
+week10/practice10-1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-1.dir\build.make CMakeFiles/practice10-1.dir/week10/practice10-1.cpp.obj
+.PHONY : week10/practice10-1.cpp.obj
+
+week10/practice10-1.i: week10/practice10-1.cpp.i
+
+.PHONY : week10/practice10-1.i
+
+# target to preprocess a source file
+week10/practice10-1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-1.dir\build.make CMakeFiles/practice10-1.dir/week10/practice10-1.cpp.i
+.PHONY : week10/practice10-1.cpp.i
+
+week10/practice10-1.s: week10/practice10-1.cpp.s
+
+.PHONY : week10/practice10-1.s
+
+# target to generate assembly for a file
+week10/practice10-1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-1.dir\build.make CMakeFiles/practice10-1.dir/week10/practice10-1.cpp.s
+.PHONY : week10/practice10-1.cpp.s
+
+week10/practice10-2.obj: week10/practice10-2.cpp.obj
+
+.PHONY : week10/practice10-2.obj
+
+# target to build an object file
+week10/practice10-2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-2.dir\build.make CMakeFiles/practice10-2.dir/week10/practice10-2.cpp.obj
+.PHONY : week10/practice10-2.cpp.obj
+
+week10/practice10-2.i: week10/practice10-2.cpp.i
+
+.PHONY : week10/practice10-2.i
+
+# target to preprocess a source file
+week10/practice10-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-2.dir\build.make CMakeFiles/practice10-2.dir/week10/practice10-2.cpp.i
+.PHONY : week10/practice10-2.cpp.i
+
+week10/practice10-2.s: week10/practice10-2.cpp.s
+
+.PHONY : week10/practice10-2.s
+
+# target to generate assembly for a file
+week10/practice10-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-2.dir\build.make CMakeFiles/practice10-2.dir/week10/practice10-2.cpp.s
+.PHONY : week10/practice10-2.cpp.s
+
+week10/practice10-3.obj: week10/practice10-3.cpp.obj
+
+.PHONY : week10/practice10-3.obj
+
+# target to build an object file
+week10/practice10-3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-3.dir\build.make CMakeFiles/practice10-3.dir/week10/practice10-3.cpp.obj
+.PHONY : week10/practice10-3.cpp.obj
+
+week10/practice10-3.i: week10/practice10-3.cpp.i
+
+.PHONY : week10/practice10-3.i
+
+# target to preprocess a source file
+week10/practice10-3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-3.dir\build.make CMakeFiles/practice10-3.dir/week10/practice10-3.cpp.i
+.PHONY : week10/practice10-3.cpp.i
+
+week10/practice10-3.s: week10/practice10-3.cpp.s
+
+.PHONY : week10/practice10-3.s
+
+# target to generate assembly for a file
+week10/practice10-3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-3.dir\build.make CMakeFiles/practice10-3.dir/week10/practice10-3.cpp.s
+.PHONY : week10/practice10-3.cpp.s
+
+week10/practice10-4.obj: week10/practice10-4.cpp.obj
+
+.PHONY : week10/practice10-4.obj
+
+# target to build an object file
+week10/practice10-4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-4.dir\build.make CMakeFiles/practice10-4.dir/week10/practice10-4.cpp.obj
+.PHONY : week10/practice10-4.cpp.obj
+
+week10/practice10-4.i: week10/practice10-4.cpp.i
+
+.PHONY : week10/practice10-4.i
+
+# target to preprocess a source file
+week10/practice10-4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-4.dir\build.make CMakeFiles/practice10-4.dir/week10/practice10-4.cpp.i
+.PHONY : week10/practice10-4.cpp.i
+
+week10/practice10-4.s: week10/practice10-4.cpp.s
+
+.PHONY : week10/practice10-4.s
+
+# target to generate assembly for a file
+week10/practice10-4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice10-4.dir\build.make CMakeFiles/practice10-4.dir/week10/practice10-4.cpp.s
+.PHONY : week10/practice10-4.cpp.s
 
 week2/practice2-1.obj: week2/practice2-1.cpp.obj
 
@@ -1221,6 +1421,10 @@ help:
 	@echo ... practice1-1
 	@echo ... practice1-2
 	@echo ... practice1-2-2
+	@echo ... practice10-1
+	@echo ... practice10-2
+	@echo ... practice10-3
+	@echo ... practice10-4
 	@echo ... practice2-1
 	@echo ... practice2-2
 	@echo ... practice2-3-2
@@ -1244,9 +1448,13 @@ help:
 	@echo ... practice9-2
 	@echo ... practice9-3
 	@echo ... practice9-4
+	@echo ... stringTest
 	@echo ... EX/linkedListTest.obj
 	@echo ... EX/linkedListTest.i
 	@echo ... EX/linkedListTest.s
+	@echo ... EX/stringTest.obj
+	@echo ... EX/stringTest.i
+	@echo ... EX/stringTest.s
 	@echo ... week1/practice1-1.obj
 	@echo ... week1/practice1-1.i
 	@echo ... week1/practice1-1.s
@@ -1256,6 +1464,18 @@ help:
 	@echo ... week1/practice1-2.obj
 	@echo ... week1/practice1-2.i
 	@echo ... week1/practice1-2.s
+	@echo ... week10/practice10-1.obj
+	@echo ... week10/practice10-1.i
+	@echo ... week10/practice10-1.s
+	@echo ... week10/practice10-2.obj
+	@echo ... week10/practice10-2.i
+	@echo ... week10/practice10-2.s
+	@echo ... week10/practice10-3.obj
+	@echo ... week10/practice10-3.i
+	@echo ... week10/practice10-3.s
+	@echo ... week10/practice10-4.obj
+	@echo ... week10/practice10-4.i
+	@echo ... week10/practice10-4.s
 	@echo ... week2/practice2-1.obj
 	@echo ... week2/practice2-1.i
 	@echo ... week2/practice2-1.s

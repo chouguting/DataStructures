@@ -26,6 +26,8 @@ public:
             } else {
                 lastPtr->nextPtr = temp;
             }
+
+
             lastPtr = temp;
         }
     }
