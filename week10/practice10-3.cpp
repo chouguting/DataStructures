@@ -15,7 +15,6 @@ private:
         listNode *nextPtr;
         priceNode *firstPrice;
 
-        //TODO:讓它加資料時已經排序
         void addPrice(int price) {
             priceNode *temp = new priceNode;
             temp->price = price;
