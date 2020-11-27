@@ -1,133 +1,91 @@
 #include <iostream>
+
 using namespace std;
+struct listNode {
+    int data;
+    listNode *nextPtr;
+};
 
-class LinkedPoly {
-    struct listNode {
-        int coef;
-        int expo;
-        listNode *nextPtr;
-    };
+class LinkedRoundTable {
 public:
-    listNode *frontPtr;
+    listNode *firstPtr;
+    listNode *lastPtr;
 
-    LinkedPoly() {
-        frontPtr = nullptr;
+    LinkedRoundTable() {
+        firstPtr = nullptr;
+        lastPtr = nullptr;
     }
 
-    void add(int coefNum, int expoNum) {
-        listNode *temp = new listNode;
-        temp->nextPtr = nullptr;
-        temp->coef = coefNum;
-        temp->expo = expoNum;
-        listNode *locator = frontPtr;
-        if (frontPtr == nullptr) {
-            frontPtr = temp;
-            return;
-        }
-        if (expoNum > frontPtr->expo) {
-            temp->nextPtr = frontPtr;
-            frontPtr = temp;
-            return;
-        }
-        while (frontPtr != nullptr && locator->nextPtr != nullptr) {
-            if (locator->nextPtr != nullptr && locator->nextPtr->expo < expoNum) {
-                break;
+    void addToN(int n) {
+        for (int i = 1; i <= n; i++) {
+            listNode *temp = new listNode;
+            temp->data = i;
+            temp->nextPtr = nullptr;
+            if (firstPtr == nullptr) {
+                firstPtr = temp;
+            } else {
+                lastPtr->nextPtr = temp;
             }
-            locator = locator->nextPtr;
+
+
+            lastPtr = temp;
         }
-        temp->nextPtr = locator->nextPtr;
-        locator->nextPtr = temp;
     }
 
-    void printPoly() {
-        for (listNode *i = frontPtr; i != nullptr; i = i->nextPtr) {
-            if (i->coef == 0) {
-                continue;
+    void playUntilLastOne(int startWith, int step) {
+        listNode *indexer = firstPtr;
+        for (int i = 1; i < startWith; i++) {
+            indexer = indexer->nextPtr;
+        }
+        while (firstPtr != lastPtr) {
+            listNode *prior;
+            listNode *theOne;
+            for (int i = 0; i < step;) {
+                if (i == step - 2)prior = indexer;
+                if (i == step - 1)theOne = indexer;
+                if (indexer->nextPtr == nullptr) {
+                    indexer = firstPtr;
+                } else {
+                    indexer = indexer->nextPtr;
+                }
+                i++;
             }
-            if (i != frontPtr && i->coef >= 0) {
-                cout << " + ";
-            }
-            printf("%d", i->coef);
-            if (i->expo > 0) {
-                cout << "x";
-            }
-            if (i->expo > 1) {
-                cout << "^" << i->expo;
-            }
+            cout << popThatOne(theOne, &prior) << " ";
+        }
+        cout << firstPtr->data << endl;
+    }
+
+    int popThatOne(listNode *theOne, listNode **prior) {
+        listNode *temp;
+        if ((*prior)->nextPtr == nullptr) {
+            temp = firstPtr;
+            firstPtr = firstPtr->nextPtr;
+        } else if (theOne->nextPtr == nullptr) {
+            temp = theOne;
+            lastPtr = *prior;
+            lastPtr->nextPtr = nullptr;
+        } else {
+            temp = theOne;
+            (*prior)->nextPtr = theOne->nextPtr;
+        }
+        int a = temp->data;
+        delete (temp);
+        return a;
+    }
+
+    void printList() {
+        for (listNode *i = firstPtr; i != nullptr; i = i->nextPtr) {
+            cout << i->data << " ";
         }
         cout << endl;
     }
-
-    LinkedPoly operator+(LinkedPoly B) {
-        LinkedPoly ans;
-        listNode *aIndex = frontPtr;
-        listNode *bIndex = B.frontPtr;
-        while (aIndex != nullptr && bIndex != nullptr) {
-            if (aIndex->expo > bIndex->expo) {
-                ans.add(aIndex->coef, aIndex->expo);
-                aIndex = aIndex->nextPtr;
-            } else if (aIndex->expo < bIndex->expo) {
-                ans.add(bIndex->coef, bIndex->expo);
-                bIndex = bIndex->nextPtr;
-            } else {
-                ans.add(aIndex->coef + bIndex->coef, aIndex->expo);
-                aIndex = aIndex->nextPtr;
-                bIndex = bIndex->nextPtr;
-            }
-        }
-        while (aIndex != nullptr) {
-            ans.add(aIndex->coef, aIndex->expo);
-            aIndex = aIndex->nextPtr;
-        }
-        while (bIndex != nullptr) {
-            ans.add(bIndex->coef, bIndex->expo);
-            bIndex = bIndex->nextPtr;
-        }
-        return ans;
-    }
-
-    LinkedPoly operator*(LinkedPoly B) {
-        LinkedPoly ans;
-        LinkedPoly theMiddleTerm[100];
-        listNode *bIndex = B.frontPtr;
-        int midTermSize = 0;
-        while (bIndex != nullptr) {
-            for (listNode *aIndex = frontPtr; aIndex != nullptr; aIndex = aIndex->nextPtr) {
-                theMiddleTerm[midTermSize].add(aIndex->coef * bIndex->coef, aIndex->expo + bIndex->expo);
-            }
-            midTermSize++;
-            bIndex = bIndex->nextPtr;
-        }
-        for (int i = 0; i < midTermSize; i++) {
-            ans = ans + theMiddleTerm[i];
-        }
-        return ans;
-    }
-
 };
 
-ostream &operator<<(ostream &out, LinkedPoly a) {
-    a.printPoly();
-    return out;
-}
-
 int main() {
-    LinkedPoly A;
-    LinkedPoly B;
-    while (true) {
-        int coef, expo;
-        cin >> coef;
-        if (coef == -1)break;
-        cin >> expo;
-        A.add(coef, expo);
-    }
-    while (true) {
-        int coef, expo;
-        cin >> coef;
-        if (coef == -1)break;
-        cin >> expo;
-        B.add(coef, expo);
-    }
-    cout << "add = " << A + B;
-    cout << "mult = " << A * B;
+    int n, a, b;
+    cin >> n >> a >> b;
+    LinkedRoundTable linkedRoundTable;
+    linkedRoundTable.addToN(n);
+    //linkedRoundTable.printList();
+    linkedRoundTable.playUntilLastOne(a, b);
 }

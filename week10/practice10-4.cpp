@@ -1,123 +1,149 @@
 #include <iostream>
-#include <cstring>
-#include <algorithm>
+#include <vector>
 
 using namespace std;
 
-
-class LinkedList {
-    struct listNode {
-        string data;
-        int count;
-        listNode *nextPtr;
-    };
+class ItemNode {
 public:
-    listNode *frontPtr;
+    char name;
+    float value;
+    float weight;
+    ItemNode *nextPtr;
 
-    LinkedList() {
-        frontPtr = nullptr;
+    ItemNode(char name, float value, float weight) : name(name), value(value), weight(weight) {}
+
+    ItemNode() {}
+};
+
+class StoragePlace {
+public:
+    int maxWeight;
+    ItemNode *topPtr;
+
+    StoragePlace(int maxW) {
+        maxWeight = maxW;
+        topPtr = NULL;
     }
 
+    float getWeight() {
+        float weightSum = 0;
+        if (topPtr == nullptr)return 0;
+        for (ItemNode *i = topPtr; i != nullptr; i = i->nextPtr) {
+            weightSum += i->weight;
+        }
+        return weightSum;
+    }
 
-    bool add(string newWord, int index) {
-        listNode *last = frontPtr;
-        listNode *finder = frontPtr;
-        bool hasFound = false;
-        while (finder != nullptr) {
-            string temp = finder->data;
-            string temp2 = newWord;
-            transform(temp.begin(), temp.end(), temp.begin(), ::tolower);
-            transform(temp2.begin(), temp2.end(), temp2.begin(), ::tolower);
-            if (temp == temp2) {
-                hasFound = true;
+    bool isEmpty() {
+        return (topPtr == nullptr) ? true : false;
+    }
+
+    bool canFit(ItemNode item) {
+        if (getWeight() + item.weight > maxWeight)return false;
+        return true;
+    }
+
+    bool push(ItemNode item) {
+        if (!canFit(item))return false;
+        ItemNode *locator = topPtr;
+        while (locator != nullptr &&
+               (locator->value / locator->weight) > (item.value / item.weight)) {
+            if (locator->nextPtr == nullptr ||
+                (locator->nextPtr->value / locator->nextPtr->weight) <= (item.value / item.weight)) {
+                while (locator->nextPtr != nullptr &&
+                       locator->nextPtr->value / locator->nextPtr->weight == item.value / item.weight &&
+                       item.weight > locator->nextPtr->weight) {
+                    locator = locator->nextPtr;
+                }
                 break;
             }
-            finder = finder->nextPtr;
+            locator = locator->nextPtr;
         }
-
-        if (finder == nullptr && index != -1) {
-            finder = frontPtr;
-            for (int i = 1; i < index; i++) {
-                if (finder == nullptr)break;
-                finder = finder->nextPtr;
-            }
-            if (finder == nullptr)return false;
-        }
-
-        while (frontPtr != nullptr && last->nextPtr != nullptr) {
-            last = last->nextPtr;
-        }
-        listNode *temp = new listNode;
-        temp->nextPtr = nullptr;
-        temp->data = newWord;
-        if (finder == nullptr) {
-            temp->count = 1;
-            if (frontPtr == nullptr) {
-                frontPtr = temp;
+        ItemNode *temp = new ItemNode;
+        *temp = item;
+        if (locator == nullptr) {
+            temp->nextPtr = nullptr;
+            topPtr = temp;
+        } else if (locator == topPtr) {
+            if (locator->value / locator->weight > item.value / item.weight) {
+                temp->nextPtr = topPtr->nextPtr;
+                locator->nextPtr = temp;
             } else {
-                last->nextPtr = temp;
+                temp->nextPtr = topPtr;
+                topPtr = temp;
             }
-            return false;
+
         } else {
-            if (hasFound) {
-                finder->count += 1;
-            } else {
-                temp->count = 1;
-                temp->nextPtr = finder->nextPtr;
-                finder->nextPtr = temp;
-            }
-
+            temp->nextPtr = locator->nextPtr;
+            locator->nextPtr = temp;
         }
         return true;
     }
 
-    void printList() {
-        for (listNode *i = frontPtr; i != nullptr; i = i->nextPtr) {
-            cout << i->data << ", " << i->count;
-            cout << endl;
+    ItemNode pop() {
+        ItemNode *locator = topPtr;
+        while (locator->nextPtr->nextPtr != nullptr) {
+            locator = locator->nextPtr;
         }
+        ItemNode *temp = locator->nextPtr;
+        ItemNode re = *temp;
+        delete (temp);
+        locator->nextPtr = nullptr;
+        return re;
+    }
 
+    bool CPsmallestWorthToBeReplaced(ItemNode item) {
+        ItemNode *locator = topPtr;
+        while (locator->nextPtr != nullptr) {
+            locator = locator->nextPtr;
+        }
+        return ((locator->value / locator->weight) < (item.value / item.weight)) ? true : false;
+    }
+
+    //這邊這麼麻煩是因為我LIST方向反了
+    void printContent() {
+        float valueSum = 0;
+        int counter = 0;
+        for (ItemNode *i = topPtr; i != nullptr; i = i->nextPtr) {
+            counter++;
+            valueSum += i->value;
+        }
+        for (int i = counter; i > 0; i--) {
+            ItemNode *id = topPtr;
+            for (int j = 1; j < i; j++) {
+                id = id->nextPtr;
+            }
+            cout << id->name;
+            if (i != 1)cout << " ";
+        }
+        cout << endl;
+        printf("total weight:%.2f\n", getWeight());
+        printf("total value:%.0f\n", valueSum);
     }
 };
 
+
 int main() {
-    LinkedList linkedList;
+    StoragePlace backPack(20);
     while (true) {
-        bool ended = false;
-        char input[500];
-        fgets(input, 500, stdin);
-        strtok(input, "\r\n");
-        char *p = strtok(input, " ");
-        while (p != nullptr) {
-            string temp(p);
-            if (strcmp(input, "#Finish") == 0) {
-                ended = true;
-                break;
+        char name;
+        float value, weight;
+        cin >> name;
+        if (name == '-')break;
+        cin >> value >> weight;
+        getchar();
+        ItemNode itemForNow(name, value, weight);
+        if (backPack.push(itemForNow)) {
+            continue;
+        } else {
+            while (!backPack.canFit(itemForNow)) {
+                if (!backPack.CPsmallestWorthToBeReplaced(itemForNow)) {
+                    break;
+                }
+                backPack.pop();
             }
-            linkedList.add(temp, -1);
-            p = strtok(nullptr, " ");
-        }
-        if (ended)break;
-    }
-
-
-    while (true) {
-        string opCode;
-        cin >> opCode;
-        if (opCode == "#Exit")break;
-        if (opCode == "#Print") {
-            linkedList.printList();
-        }
-        if (opCode == "#Insert") {
-            int count;
-            string input;
-            cin >> count >> input;
-            linkedList.add(input, count);
-        }
-        if (opCode == "#Add") {
-            string input;
-            cin >> input;
-            linkedList.add(input, -1);
+            backPack.push(itemForNow);
         }
     }
+    backPack.printContent();
 }

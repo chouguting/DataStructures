@@ -1,107 +1,92 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
-class LinkedList {
-private:
-    struct priceNode {
-        int price;
-        priceNode *nextPtr;
-    };
+struct listNode {
+    char data[500];
+    listNode *nextPtr;
+};
 
-    class listNode {
-    public:
-        string data;
-        listNode *nextPtr;
-        priceNode *firstPrice;
-
-        void addPrice(int price) {
-            priceNode *temp = new priceNode;
-            temp->price = price;
-            temp->nextPtr = nullptr;
-            if (firstPrice == nullptr) {
-                firstPrice = temp;
-            } else {
-                if (price < firstPrice->price) {
-                    temp->nextPtr = firstPrice;
-                    firstPrice = temp;
-                    return;
-                }
-                priceNode *locator = firstPrice;
-                while (firstPrice != nullptr && locator->nextPtr != nullptr) {
-                    if (price < locator->nextPtr->price) {
-                        break;
-                    }
-                    locator = locator->nextPtr;
-                }
-                temp->nextPtr = locator->nextPtr;
-                locator->nextPtr = temp;
-            }
-        }
-
-        void printPrice() {
-            for (priceNode *i = firstPrice; i != nullptr; i = i->nextPtr) {
-                cout << i->price << ",";
-            }
-        }
-    };
-
-    listNode *frontPtr;
+class LinkedStack {
 public:
-    LinkedList() {
-        frontPtr = nullptr;
+    listNode *topPtr;
+
+    LinkedStack() {
+        topPtr = nullptr;
     }
 
-    bool add(string itemName, int price) {
-        listNode *last = frontPtr;
-        listNode *finder = frontPtr;
-        while (finder != nullptr) {
-            if (finder->data == itemName) {
+    void push(char *theStr) {
+        listNode *temp = new listNode;
+        strcpy(temp->data, theStr);
+        temp->nextPtr = topPtr;
+        topPtr = temp;
+    }
+
+    void pushUnique(char *newString) {
+        listNode *locator = topPtr;
+        listNode *prior = nullptr;
+        bool firstTime = true;
+        while (locator != nullptr) {
+            if (locator != topPtr) {
+                if (firstTime) {
+                    prior = topPtr;
+                    firstTime = false;
+                } else {
+                    prior = prior->nextPtr;
+                }
+
+            }
+            if (strcmp(locator->data, newString) == 0) {
                 break;
             }
-            finder = finder->nextPtr;
+            locator = locator->nextPtr;
+        }
+        if (locator == nullptr) {
+            push(newString);
+            return;
         }
 
-        while (frontPtr != nullptr && last->nextPtr != nullptr) {
-            last = last->nextPtr;
-        }
-
-        if (finder == nullptr) {
-            listNode *temp = new listNode;
-            temp->nextPtr = nullptr;
-            temp->data = itemName;
-            temp->firstPrice = nullptr;
-            if (frontPtr == nullptr) {
-                frontPtr = temp;
-            } else {
-                last->nextPtr = temp;
-            }
-            temp->addPrice(price);
-            return false;
+        listNode *temp;
+        if (prior == nullptr) {
+            temp = topPtr;
+            topPtr = topPtr->nextPtr;
         } else {
-            finder->addPrice(price);
+            temp = locator;
+            prior->nextPtr = locator->nextPtr;
         }
-        return true;
+        delete (temp);
     }
 
-    void printList() {
-        for (listNode *i = frontPtr; i != nullptr; i = i->nextPtr) {
-            cout << i->data << ",";
-            i->printPrice();
-            cout << endl;
+    int countLeft() {
+        int count = 0;
+        for (listNode *i = topPtr; i != nullptr; i = i->nextPtr) {
+            count++;
         }
+        return count;
     }
 };
 
 int main() {
-    int times;
-    cin >> times;
-    LinkedList linkedList;
-    for (int t = 0; t < times; t++) {
-        string itemName;
-        int price;
-        cin >> itemName >> price;
-        linkedList.add(itemName, price);
+    int n;
+    cin >> n;
+    getchar();
+    getchar();
+    int piles[n];
+    for (int i = 0; i < n; i++) {
+        cin >> piles[i];
+        getchar();
+        getchar();
     }
-    linkedList.printList();
+
+    for (int i = 0; i < n; i++) {
+        LinkedStack linkedStack;
+        for (int j = 0; j < piles[i]; j++) {
+            char theStr[500];
+            fgets(theStr, 500, stdin);
+            strtok(theStr, "\r\n");
+            linkedStack.pushUnique(theStr);
+        }
+        cout << linkedStack.countLeft() << endl;
+    }
 }

@@ -1,33 +1,41 @@
 #include <iostream>
-#include <cstring>
 
 using namespace std;
 
+struct listNode {
+    int data;
+    listNode *nextPtr;
+};
+
 class LinkedList {
-    struct listNode {
-        int data;
-        listNode *nextPtr;
-    };
-    listNode *frontPtr;
 public:
+    listNode *frontPtr;
+
     LinkedList() {
         frontPtr = nullptr;
     }
 
-    void invert() {
-        listNode *lead = frontPtr;
-        listNode *middle, *trail;
-        middle = nullptr;
-        while (lead != nullptr) {
-            trail = middle;
-            middle = lead;
-            lead = lead->nextPtr;
-            middle->nextPtr = trail;
-        }
-        frontPtr = middle;
+    void addFromFront(int newNum) {
+        listNode *temp = new listNode;
+        temp->data = newNum;
+        temp->nextPtr = frontPtr;
+        frontPtr = temp;
     }
 
-    void add(int newNum) {
+    void addFromMiddle(int newNum, int index) {
+        listNode *temp = new listNode;
+        int i = 0;
+        listNode *locator = frontPtr;
+        while (i < index - 1) {
+            locator = frontPtr->nextPtr;
+            i++;
+        }
+        temp->data = newNum;
+        temp->nextPtr = locator->nextPtr;
+        locator->nextPtr = temp;
+    }
+
+    void addFromRear(int newNum) {
         listNode *locator = frontPtr;
         while (frontPtr != nullptr && locator->nextPtr != nullptr) {
             locator = locator->nextPtr;
@@ -45,7 +53,7 @@ public:
 
     void printList() {
         for (listNode *i = frontPtr; i != nullptr; i = i->nextPtr) {
-            cout << i->data;
+            cout << i->data << " ";
             if (i->nextPtr != nullptr)cout << " ";
         }
         cout << endl;
@@ -53,17 +61,34 @@ public:
 };
 
 int main() {
-    int input;
-    LinkedList linkedList;
-    char inputs[100];
-    fgets(inputs, 100, stdin);
-    strtok(inputs, "\r\n");
-    char *p = strtok(inputs, " ");
-    while (p != nullptr) {
-        input = stoi(p);
-        linkedList.add(input);
-        p = strtok(nullptr, " ");
+    int times;
+    cin >> times;
+    for (int t = 0; t < times; t++) {
+        LinkedList linkedList;
+        while (true) {
+            char opCode;
+            cin >> opCode;
+            if (opCode == 'f') {
+                int inputNum;
+                cin >> inputNum;
+                getchar();
+                linkedList.addFromFront(inputNum);
+            } else if (opCode == 'a') {
+                int inputNum;
+                cin >> inputNum;
+                getchar();
+                linkedList.addFromRear(inputNum);
+            } else if (opCode == 'i') {
+                int inputNum, index;
+                cin >> inputNum >> index;
+                getchar();
+                linkedList.addFromMiddle(inputNum, index);
+            } else if (opCode == 'q') {
+                break;
+            }
+            cout << "Created Linked list is:  ";
+            linkedList.printList();
+        }
+        if (t != times - 1)cout << endl;
     }
-    linkedList.invert();
-    linkedList.printList();
 }
