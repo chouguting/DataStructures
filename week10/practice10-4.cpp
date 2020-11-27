@@ -1,99 +1,123 @@
 #include <iostream>
+#include <cstring>
+#include <algorithm>
 
 using namespace std;
 
+
 class LinkedList {
-private:
-    struct priceNode {
-        int price;
-        priceNode *nextPtr;
-    };
-
-    class listNode {
-    public:
+    struct listNode {
         string data;
+        int count;
         listNode *nextPtr;
-        priceNode *firstPrice;
-
-        //TODO:讓它加資料時已經排序
-        void addPrice(int price) {
-            priceNode *temp = new priceNode;
-            temp->price = price;
-            temp->nextPtr = nullptr;
-            if (firstPrice == nullptr) {
-                firstPrice = temp;
-            } else {
-                priceNode *last = firstPrice;
-                while (firstPrice != nullptr && last->nextPtr != nullptr) {
-                    last = last->nextPtr;
-                }
-                last->nextPtr = temp;
-            }
-        }
-
-        void printPrice() {
-            for (priceNode *i = firstPrice; i != nullptr; i = i->nextPtr) {
-                cout << i->price << ",";
-            }
-        }
     };
-
-    listNode *frontPtr;
 public:
+    listNode *frontPtr;
+
     LinkedList() {
         frontPtr = nullptr;
     }
 
-    bool add(string itemName, int price) {
+
+    bool add(string newWord, int index) {
         listNode *last = frontPtr;
         listNode *finder = frontPtr;
+        bool hasFound = false;
         while (finder != nullptr) {
-            if (finder->data == itemName) {
+            string temp = finder->data;
+            string temp2 = newWord;
+            transform(temp.begin(), temp.end(), temp.begin(), ::tolower);
+            transform(temp2.begin(), temp2.end(), temp2.begin(), ::tolower);
+            if (temp == temp2) {
+                hasFound = true;
                 break;
             }
             finder = finder->nextPtr;
         }
 
+        if (finder == nullptr && index != -1) {
+            finder = frontPtr;
+            for (int i = 1; i < index; i++) {
+                if (finder == nullptr)break;
+                finder = finder->nextPtr;
+            }
+            if (finder == nullptr)return false;
+        }
+
         while (frontPtr != nullptr && last->nextPtr != nullptr) {
             last = last->nextPtr;
         }
-
+        listNode *temp = new listNode;
+        temp->nextPtr = nullptr;
+        temp->data = newWord;
         if (finder == nullptr) {
-            listNode *temp = new listNode;
-            temp->nextPtr = nullptr;
-            temp->data = itemName;
-            temp->firstPrice = nullptr;
+            temp->count = 1;
             if (frontPtr == nullptr) {
                 frontPtr = temp;
             } else {
                 last->nextPtr = temp;
             }
-            temp->addPrice(price);
             return false;
         } else {
-            finder->addPrice(price);
+            if (hasFound) {
+                finder->count += 1;
+            } else {
+                temp->count = 1;
+                temp->nextPtr = finder->nextPtr;
+                finder->nextPtr = temp;
+            }
+
         }
         return true;
     }
 
     void printList() {
         for (listNode *i = frontPtr; i != nullptr; i = i->nextPtr) {
-            cout << i->data << ",";
-            i->printPrice();
+            cout << i->data << ", " << i->count;
             cout << endl;
         }
+
     }
 };
 
 int main() {
-    int times;
-    cin >> times;
     LinkedList linkedList;
-    for (int t = 0; t < times; t++) {
-        string itemName;
-        int price;
-        cin >> itemName >> price;
-        linkedList.add(itemName, price);
+    while (true) {
+        bool ended = false;
+        char input[500];
+        fgets(input, 500, stdin);
+        strtok(input, "\r\n");
+        char *p = strtok(input, " ");
+        while (p != nullptr) {
+            string temp(p);
+            if (strcmp(input, "#Finish") == 0) {
+                ended = true;
+                break;
+            }
+            linkedList.add(temp, -1);
+            p = strtok(nullptr, " ");
+        }
+        if (ended)break;
     }
-    linkedList.printList();
+
+
+    while (true) {
+        string opCode;
+        cin >> opCode;
+        if (opCode == "#Exit")break;
+        if (opCode == "#Print") {
+            linkedList.printList();
+        }
+        if (opCode == "#Insert") {
+            int count;
+            string input;
+            cin >> count >> input;
+            linkedList.add(input, count);
+        }
+        if (opCode == "#Add") {
+            string input;
+            cin >> input;
+            linkedList.add(input, -1);
+        }
+    }
 }
