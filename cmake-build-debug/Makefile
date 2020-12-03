@@ -129,6 +129,206 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named practice12-4
+
+# Build rule for target.
+practice12-4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice12-4
+.PHONY : practice12-4
+
+# fast build rule for target.
+practice12-4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-4.dir\build.make CMakeFiles/practice12-4.dir/build
+.PHONY : practice12-4/fast
+
+#=============================================================================
+# Target rules for targets named vector
+
+# Build rule for target.
+vector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 vector
+.PHONY : vector
+
+# fast build rule for target.
+vector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/build
+.PHONY : vector/fast
+
+#=============================================================================
+# Target rules for targets named practice12-1
+
+# Build rule for target.
+practice12-1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice12-1
+.PHONY : practice12-1
+
+# fast build rule for target.
+practice12-1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-1.dir\build.make CMakeFiles/practice12-1.dir/build
+.PHONY : practice12-1/fast
+
+#=============================================================================
+# Target rules for targets named practice12-2
+
+# Build rule for target.
+practice12-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice12-2
+.PHONY : practice12-2
+
+# fast build rule for target.
+practice12-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-2.dir\build.make CMakeFiles/practice12-2.dir/build
+.PHONY : practice12-2/fast
+
+#=============================================================================
+# Target rules for targets named practice12-3
+
+# Build rule for target.
+practice12-3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice12-3
+.PHONY : practice12-3
+
+# fast build rule for target.
+practice12-3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/build
+.PHONY : practice12-3/fast
+
+EX/vector.obj: EX/vector.cpp.obj
+
+.PHONY : EX/vector.obj
+
+# target to build an object file
+EX/vector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/EX/vector.cpp.obj
+.PHONY : EX/vector.cpp.obj
+
+EX/vector.i: EX/vector.cpp.i
+
+.PHONY : EX/vector.i
+
+# target to preprocess a source file
+EX/vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/EX/vector.cpp.i
+.PHONY : EX/vector.cpp.i
+
+EX/vector.s: EX/vector.cpp.s
+
+.PHONY : EX/vector.s
+
+# target to generate assembly for a file
+EX/vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/EX/vector.cpp.s
+.PHONY : EX/vector.cpp.s
+
+week12/practice12-1.obj: week12/practice12-1.cpp.obj
+
+.PHONY : week12/practice12-1.obj
+
+# target to build an object file
+week12/practice12-1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-1.dir\build.make CMakeFiles/practice12-1.dir/week12/practice12-1.cpp.obj
+.PHONY : week12/practice12-1.cpp.obj
+
+week12/practice12-1.i: week12/practice12-1.cpp.i
+
+.PHONY : week12/practice12-1.i
+
+# target to preprocess a source file
+week12/practice12-1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-1.dir\build.make CMakeFiles/practice12-1.dir/week12/practice12-1.cpp.i
+.PHONY : week12/practice12-1.cpp.i
+
+week12/practice12-1.s: week12/practice12-1.cpp.s
+
+.PHONY : week12/practice12-1.s
+
+# target to generate assembly for a file
+week12/practice12-1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-1.dir\build.make CMakeFiles/practice12-1.dir/week12/practice12-1.cpp.s
+.PHONY : week12/practice12-1.cpp.s
+
+week12/practice12-2.obj: week12/practice12-2.cpp.obj
+
+.PHONY : week12/practice12-2.obj
+
+# target to build an object file
+week12/practice12-2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-2.dir\build.make CMakeFiles/practice12-2.dir/week12/practice12-2.cpp.obj
+.PHONY : week12/practice12-2.cpp.obj
+
+week12/practice12-2.i: week12/practice12-2.cpp.i
+
+.PHONY : week12/practice12-2.i
+
+# target to preprocess a source file
+week12/practice12-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-2.dir\build.make CMakeFiles/practice12-2.dir/week12/practice12-2.cpp.i
+.PHONY : week12/practice12-2.cpp.i
+
+week12/practice12-2.s: week12/practice12-2.cpp.s
+
+.PHONY : week12/practice12-2.s
+
+# target to generate assembly for a file
+week12/practice12-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-2.dir\build.make CMakeFiles/practice12-2.dir/week12/practice12-2.cpp.s
+.PHONY : week12/practice12-2.cpp.s
+
+week12/practice12-3.obj: week12/practice12-3.cpp.obj
+
+.PHONY : week12/practice12-3.obj
+
+# target to build an object file
+week12/practice12-3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/week12/practice12-3.cpp.obj
+.PHONY : week12/practice12-3.cpp.obj
+
+week12/practice12-3.i: week12/practice12-3.cpp.i
+
+.PHONY : week12/practice12-3.i
+
+# target to preprocess a source file
+week12/practice12-3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/week12/practice12-3.cpp.i
+.PHONY : week12/practice12-3.cpp.i
+
+week12/practice12-3.s: week12/practice12-3.cpp.s
+
+.PHONY : week12/practice12-3.s
+
+# target to generate assembly for a file
+week12/practice12-3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/week12/practice12-3.cpp.s
+.PHONY : week12/practice12-3.cpp.s
+
+week12/practice12-4.obj: week12/practice12-4.cpp.obj
+
+.PHONY : week12/practice12-4.obj
+
+# target to build an object file
+week12/practice12-4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-4.dir\build.make CMakeFiles/practice12-4.dir/week12/practice12-4.cpp.obj
+.PHONY : week12/practice12-4.cpp.obj
+
+week12/practice12-4.i: week12/practice12-4.cpp.i
+
+.PHONY : week12/practice12-4.i
+
+# target to preprocess a source file
+week12/practice12-4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-4.dir\build.make CMakeFiles/practice12-4.dir/week12/practice12-4.cpp.i
+.PHONY : week12/practice12-4.cpp.i
+
+week12/practice12-4.s: week12/practice12-4.cpp.s
+
+.PHONY : week12/practice12-4.s
+
+# target to generate assembly for a file
+week12/practice12-4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-4.dir\build.make CMakeFiles/practice12-4.dir/week12/practice12-4.cpp.s
+.PHONY : week12/practice12-4.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -137,6 +337,26 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... practice12-1
+	@echo ... practice12-2
+	@echo ... practice12-3
+	@echo ... practice12-4
+	@echo ... vector
+	@echo ... EX/vector.obj
+	@echo ... EX/vector.i
+	@echo ... EX/vector.s
+	@echo ... week12/practice12-1.obj
+	@echo ... week12/practice12-1.i
+	@echo ... week12/practice12-1.s
+	@echo ... week12/practice12-2.obj
+	@echo ... week12/practice12-2.i
+	@echo ... week12/practice12-2.s
+	@echo ... week12/practice12-3.obj
+	@echo ... week12/practice12-3.i
+	@echo ... week12/practice12-3.s
+	@echo ... week12/practice12-4.obj
+	@echo ... week12/practice12-4.i
+	@echo ... week12/practice12-4.s
 .PHONY : help
 
 
