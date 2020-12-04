@@ -62,14 +62,19 @@ public:
         theNode = new Node;
         strcpy(theNode->value, ptr);
         ptr = strtok(nullptr, " ");
+
         char *forBack;
         if (strcmp(ptr, "(") == 0) {
             char tmp[50];
             strcpy(tmp, "(");
-            while (strcmp(ptr, ")") != 0) {
+            int counter = 0;
+            while (counter != -1) {
                 ptr = strtok(nullptr, " ");
+                if (strcmp(ptr, "(") == 0)counter++;
+                if (strcmp(ptr, ")") == 0)counter--;
                 strcat(tmp, " ");
                 strcat(tmp, ptr);
+
             }
             forBack = ptr + 2;
             constructTree(tmp, theNode->leftPtr);
@@ -80,14 +85,26 @@ public:
         }
 
         if (strcmp(ptr, "(") == 0) {
-            ptr = strtok(nullptr, ")");
+            int counter = 0;
+            char tmp[50];
+            strcpy(tmp, "(");
+            while (counter != -1) {
+                ptr = strtok(nullptr, " ");
+                if (strcmp(ptr, "(") == 0)counter++;
+                if (strcmp(ptr, ")") == 0)counter--;
+                strcat(tmp, " ");
+                strcat(tmp, ptr);
+            }
+            constructTree(tmp, theNode->rightPtr);
+            /*ptr = strtok(nullptr, ")");
             strcat(ptr, " )");
             char tmp[50];
             strcpy(tmp, ptr);
             strcpy(ptr, "( ");
-            strcat(ptr, tmp);
+            strcat(ptr, tmp);*/
+        } else {
+            constructTree(ptr, theNode->rightPtr);
         }
-        constructTree(ptr, theNode->rightPtr);
     }
 
     void replaceWith(char *target, int value) {
@@ -104,11 +121,11 @@ int main() {
     fgets(input, 500, stdin);
     strtok(input, "\r\n");
     ExpressionTree expressionTree(input);
-    while (fgets(input, 500, stdin)) {
+    /*while (fgets(input, 500, stdin)) {
         char *p = strtok(input, " ");
         expressionTree.replaceWith(p, input[4] - '0');
-
-    }
+    }*/
+    expressionTree.replaceWith("x", 5);
     cout << expressionTree.calculate();
     cout << endl;
 }

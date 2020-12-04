@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named pointer
+
+# Build rule for target.
+pointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pointer
+.PHONY : pointer
+
+# fast build rule for target.
+pointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/build
+.PHONY : pointer/fast
+
+#=============================================================================
 # Target rules for targets named practice12-4
 
 # Build rule for target.
@@ -193,6 +206,33 @@ practice12-3: cmake_check_build_system
 practice12-3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/build
 .PHONY : practice12-3/fast
+
+EX/pointer.obj: EX/pointer.cpp.obj
+
+.PHONY : EX/pointer.obj
+
+# target to build an object file
+EX/pointer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/EX/pointer.cpp.obj
+.PHONY : EX/pointer.cpp.obj
+
+EX/pointer.i: EX/pointer.cpp.i
+
+.PHONY : EX/pointer.i
+
+# target to preprocess a source file
+EX/pointer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/EX/pointer.cpp.i
+.PHONY : EX/pointer.cpp.i
+
+EX/pointer.s: EX/pointer.cpp.s
+
+.PHONY : EX/pointer.s
+
+# target to generate assembly for a file
+EX/pointer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/EX/pointer.cpp.s
+.PHONY : EX/pointer.cpp.s
 
 EX/vector.obj: EX/vector.cpp.obj
 
@@ -337,11 +377,15 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... pointer
 	@echo ... practice12-1
 	@echo ... practice12-2
 	@echo ... practice12-3
 	@echo ... practice12-4
 	@echo ... vector
+	@echo ... EX/pointer.obj
+	@echo ... EX/pointer.i
+	@echo ... EX/pointer.s
 	@echo ... EX/vector.obj
 	@echo ... EX/vector.i
 	@echo ... EX/vector.s

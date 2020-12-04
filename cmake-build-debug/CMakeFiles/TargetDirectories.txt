@@ -1,3 +1,4 @@
+C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/pointer.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice12-4.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/vector.dir
 C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice12-1.dir
