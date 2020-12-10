@@ -53,10 +53,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/pointer.dir/DependInfo.cmake"
+  "CMakeFiles/practice13-1.dir/DependInfo.cmake"
   "CMakeFiles/practice12-4.dir/DependInfo.cmake"
+  "CMakeFiles/pointer.dir/DependInfo.cmake"
   "CMakeFiles/vector.dir/DependInfo.cmake"
   "CMakeFiles/practice12-1.dir/DependInfo.cmake"
+  "CMakeFiles/binarySearchTree.dir/DependInfo.cmake"
   "CMakeFiles/practice12-2.dir/DependInfo.cmake"
   "CMakeFiles/practice12-3.dir/DependInfo.cmake"
   )

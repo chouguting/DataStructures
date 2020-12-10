@@ -72,10 +72,12 @@ CMAKE_BINARY_DIR = C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/pointer.dir/all
+all: CMakeFiles/practice13-1.dir/all
 all: CMakeFiles/practice12-4.dir/all
+all: CMakeFiles/pointer.dir/all
 all: CMakeFiles/vector.dir/all
 all: CMakeFiles/practice12-1.dir/all
+all: CMakeFiles/binarySearchTree.dir/all
 all: CMakeFiles/practice12-2.dir/all
 all: CMakeFiles/practice12-3.dir/all
 
@@ -87,41 +89,43 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/pointer.dir/clean
+clean: CMakeFiles/practice13-1.dir/clean
 clean: CMakeFiles/practice12-4.dir/clean
+clean: CMakeFiles/pointer.dir/clean
 clean: CMakeFiles/vector.dir/clean
 clean: CMakeFiles/practice12-1.dir/clean
+clean: CMakeFiles/binarySearchTree.dir/clean
 clean: CMakeFiles/practice12-2.dir/clean
 clean: CMakeFiles/practice12-3.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/pointer.dir
+# Target rules for target CMakeFiles/practice13-1.dir
 
 # All Build rule for target.
-CMakeFiles/pointer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target pointer"
-.PHONY : CMakeFiles/pointer.dir/all
+CMakeFiles/practice13-1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-1.dir\build.make CMakeFiles/practice13-1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-1.dir\build.make CMakeFiles/practice13-1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target practice13-1"
+.PHONY : CMakeFiles/practice13-1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/pointer.dir/rule: cmake_check_build_system
+CMakeFiles/practice13-1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pointer.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/practice13-1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/pointer.dir/rule
+.PHONY : CMakeFiles/practice13-1.dir/rule
 
 # Convenience name for target.
-pointer: CMakeFiles/pointer.dir/rule
+practice13-1: CMakeFiles/practice13-1.dir/rule
 
-.PHONY : pointer
+.PHONY : practice13-1
 
 # clean rule for target.
-CMakeFiles/pointer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/clean
-.PHONY : CMakeFiles/pointer.dir/clean
+CMakeFiles/practice13-1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-1.dir\build.make CMakeFiles/practice13-1.dir/clean
+.PHONY : CMakeFiles/practice13-1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/practice12-4.dir
@@ -130,7 +134,7 @@ CMakeFiles/pointer.dir/clean:
 CMakeFiles/practice12-4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-4.dir\build.make CMakeFiles/practice12-4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-4.dir\build.make CMakeFiles/practice12-4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target practice12-4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target practice12-4"
 .PHONY : CMakeFiles/practice12-4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -151,13 +155,40 @@ CMakeFiles/practice12-4.dir/clean:
 .PHONY : CMakeFiles/practice12-4.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/pointer.dir
+
+# All Build rule for target.
+CMakeFiles/pointer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target pointer"
+.PHONY : CMakeFiles/pointer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pointer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pointer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/pointer.dir/rule
+
+# Convenience name for target.
+pointer: CMakeFiles/pointer.dir/rule
+
+.PHONY : pointer
+
+# clean rule for target.
+CMakeFiles/pointer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/clean
+.PHONY : CMakeFiles/pointer.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/vector.dir
 
 # All Build rule for target.
 CMakeFiles/vector.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target vector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target vector"
 .PHONY : CMakeFiles/vector.dir/all
 
 # Build rule for subdir invocation for target.
@@ -184,7 +215,7 @@ CMakeFiles/vector.dir/clean:
 CMakeFiles/practice12-1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-1.dir\build.make CMakeFiles/practice12-1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-1.dir\build.make CMakeFiles/practice12-1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target practice12-1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target practice12-1"
 .PHONY : CMakeFiles/practice12-1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -205,13 +236,40 @@ CMakeFiles/practice12-1.dir/clean:
 .PHONY : CMakeFiles/practice12-1.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/binarySearchTree.dir
+
+# All Build rule for target.
+CMakeFiles/binarySearchTree.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binarySearchTree.dir\build.make CMakeFiles/binarySearchTree.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binarySearchTree.dir\build.make CMakeFiles/binarySearchTree.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target binarySearchTree"
+.PHONY : CMakeFiles/binarySearchTree.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/binarySearchTree.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/binarySearchTree.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/binarySearchTree.dir/rule
+
+# Convenience name for target.
+binarySearchTree: CMakeFiles/binarySearchTree.dir/rule
+
+.PHONY : binarySearchTree
+
+# clean rule for target.
+CMakeFiles/binarySearchTree.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binarySearchTree.dir\build.make CMakeFiles/binarySearchTree.dir/clean
+.PHONY : CMakeFiles/binarySearchTree.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/practice12-2.dir
 
 # All Build rule for target.
 CMakeFiles/practice12-2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-2.dir\build.make CMakeFiles/practice12-2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-2.dir\build.make CMakeFiles/practice12-2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target practice12-2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target practice12-2"
 .PHONY : CMakeFiles/practice12-2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -238,7 +296,7 @@ CMakeFiles/practice12-2.dir/clean:
 CMakeFiles/practice12-3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target practice12-3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target practice12-3"
 .PHONY : CMakeFiles/practice12-3.dir/all
 
 # Build rule for subdir invocation for target.

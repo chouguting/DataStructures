@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pointer
+# Target rules for targets named practice13-1
 
 # Build rule for target.
-pointer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pointer
-.PHONY : pointer
+practice13-1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice13-1
+.PHONY : practice13-1
 
 # fast build rule for target.
-pointer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/build
-.PHONY : pointer/fast
+practice13-1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-1.dir\build.make CMakeFiles/practice13-1.dir/build
+.PHONY : practice13-1/fast
 
 #=============================================================================
 # Target rules for targets named practice12-4
@@ -154,6 +154,19 @@ practice12-4: cmake_check_build_system
 practice12-4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-4.dir\build.make CMakeFiles/practice12-4.dir/build
 .PHONY : practice12-4/fast
+
+#=============================================================================
+# Target rules for targets named pointer
+
+# Build rule for target.
+pointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pointer
+.PHONY : pointer
+
+# fast build rule for target.
+pointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer.dir\build.make CMakeFiles/pointer.dir/build
+.PHONY : pointer/fast
 
 #=============================================================================
 # Target rules for targets named vector
@@ -182,6 +195,19 @@ practice12-1/fast:
 .PHONY : practice12-1/fast
 
 #=============================================================================
+# Target rules for targets named binarySearchTree
+
+# Build rule for target.
+binarySearchTree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 binarySearchTree
+.PHONY : binarySearchTree
+
+# fast build rule for target.
+binarySearchTree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binarySearchTree.dir\build.make CMakeFiles/binarySearchTree.dir/build
+.PHONY : binarySearchTree/fast
+
+#=============================================================================
 # Target rules for targets named practice12-2
 
 # Build rule for target.
@@ -206,6 +232,33 @@ practice12-3: cmake_check_build_system
 practice12-3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/build
 .PHONY : practice12-3/fast
+
+EX/binarySearchTree.obj: EX/binarySearchTree.cpp.obj
+
+.PHONY : EX/binarySearchTree.obj
+
+# target to build an object file
+EX/binarySearchTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binarySearchTree.dir\build.make CMakeFiles/binarySearchTree.dir/EX/binarySearchTree.cpp.obj
+.PHONY : EX/binarySearchTree.cpp.obj
+
+EX/binarySearchTree.i: EX/binarySearchTree.cpp.i
+
+.PHONY : EX/binarySearchTree.i
+
+# target to preprocess a source file
+EX/binarySearchTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binarySearchTree.dir\build.make CMakeFiles/binarySearchTree.dir/EX/binarySearchTree.cpp.i
+.PHONY : EX/binarySearchTree.cpp.i
+
+EX/binarySearchTree.s: EX/binarySearchTree.cpp.s
+
+.PHONY : EX/binarySearchTree.s
+
+# target to generate assembly for a file
+EX/binarySearchTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binarySearchTree.dir\build.make CMakeFiles/binarySearchTree.dir/EX/binarySearchTree.cpp.s
+.PHONY : EX/binarySearchTree.cpp.s
 
 EX/pointer.obj: EX/pointer.cpp.obj
 
@@ -369,6 +422,33 @@ week12/practice12-4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-4.dir\build.make CMakeFiles/practice12-4.dir/week12/practice12-4.cpp.s
 .PHONY : week12/practice12-4.cpp.s
 
+week13/practice13-1.obj: week13/practice13-1.cpp.obj
+
+.PHONY : week13/practice13-1.obj
+
+# target to build an object file
+week13/practice13-1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-1.dir\build.make CMakeFiles/practice13-1.dir/week13/practice13-1.cpp.obj
+.PHONY : week13/practice13-1.cpp.obj
+
+week13/practice13-1.i: week13/practice13-1.cpp.i
+
+.PHONY : week13/practice13-1.i
+
+# target to preprocess a source file
+week13/practice13-1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-1.dir\build.make CMakeFiles/practice13-1.dir/week13/practice13-1.cpp.i
+.PHONY : week13/practice13-1.cpp.i
+
+week13/practice13-1.s: week13/practice13-1.cpp.s
+
+.PHONY : week13/practice13-1.s
+
+# target to generate assembly for a file
+week13/practice13-1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-1.dir\build.make CMakeFiles/practice13-1.dir/week13/practice13-1.cpp.s
+.PHONY : week13/practice13-1.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -377,12 +457,17 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... binarySearchTree
 	@echo ... pointer
 	@echo ... practice12-1
 	@echo ... practice12-2
 	@echo ... practice12-3
 	@echo ... practice12-4
+	@echo ... practice13-1
 	@echo ... vector
+	@echo ... EX/binarySearchTree.obj
+	@echo ... EX/binarySearchTree.i
+	@echo ... EX/binarySearchTree.s
 	@echo ... EX/pointer.obj
 	@echo ... EX/pointer.i
 	@echo ... EX/pointer.s
@@ -401,6 +486,9 @@ help:
 	@echo ... week12/practice12-4.obj
 	@echo ... week12/practice12-4.i
 	@echo ... week12/practice12-4.s
+	@echo ... week13/practice13-1.obj
+	@echo ... week13/practice13-1.i
+	@echo ... week13/practice13-1.s
 .PHONY : help
 
 

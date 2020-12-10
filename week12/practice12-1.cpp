@@ -8,7 +8,7 @@ int main() {
     int data[1024] = {};
     int num, left, right;
     cin >> num >> left >> right;
-    data[1] =;
+    data[1] = num;
     data[2] = left;
     data[3] = right;
     data[0] = 3; //存TOP
