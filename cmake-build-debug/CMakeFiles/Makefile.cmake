@@ -61,4 +61,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/binarySearchTree.dir/DependInfo.cmake"
   "CMakeFiles/practice12-2.dir/DependInfo.cmake"
   "CMakeFiles/practice12-3.dir/DependInfo.cmake"
+  "CMakeFiles/practice13-4.dir/DependInfo.cmake"
+  "CMakeFiles/heap.dir/DependInfo.cmake"
+  "CMakeFiles/practice13-2.dir/DependInfo.cmake"
+  "CMakeFiles/practice13-3.dir/DependInfo.cmake"
   )

@@ -233,6 +233,58 @@ practice12-3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice12-3.dir\build.make CMakeFiles/practice12-3.dir/build
 .PHONY : practice12-3/fast
 
+#=============================================================================
+# Target rules for targets named practice13-4
+
+# Build rule for target.
+practice13-4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice13-4
+.PHONY : practice13-4
+
+# fast build rule for target.
+practice13-4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-4.dir\build.make CMakeFiles/practice13-4.dir/build
+.PHONY : practice13-4/fast
+
+#=============================================================================
+# Target rules for targets named heap
+
+# Build rule for target.
+heap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 heap
+.PHONY : heap
+
+# fast build rule for target.
+heap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/build
+.PHONY : heap/fast
+
+#=============================================================================
+# Target rules for targets named practice13-2
+
+# Build rule for target.
+practice13-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice13-2
+.PHONY : practice13-2
+
+# fast build rule for target.
+practice13-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-2.dir\build.make CMakeFiles/practice13-2.dir/build
+.PHONY : practice13-2/fast
+
+#=============================================================================
+# Target rules for targets named practice13-3
+
+# Build rule for target.
+practice13-3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice13-3
+.PHONY : practice13-3
+
+# fast build rule for target.
+practice13-3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-3.dir\build.make CMakeFiles/practice13-3.dir/build
+.PHONY : practice13-3/fast
+
 EX/binarySearchTree.obj: EX/binarySearchTree.cpp.obj
 
 .PHONY : EX/binarySearchTree.obj
@@ -259,6 +311,33 @@ EX/binarySearchTree.s: EX/binarySearchTree.cpp.s
 EX/binarySearchTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\binarySearchTree.dir\build.make CMakeFiles/binarySearchTree.dir/EX/binarySearchTree.cpp.s
 .PHONY : EX/binarySearchTree.cpp.s
+
+EX/heap.obj: EX/heap.cpp.obj
+
+.PHONY : EX/heap.obj
+
+# target to build an object file
+EX/heap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/EX/heap.cpp.obj
+.PHONY : EX/heap.cpp.obj
+
+EX/heap.i: EX/heap.cpp.i
+
+.PHONY : EX/heap.i
+
+# target to preprocess a source file
+EX/heap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/EX/heap.cpp.i
+.PHONY : EX/heap.cpp.i
+
+EX/heap.s: EX/heap.cpp.s
+
+.PHONY : EX/heap.s
+
+# target to generate assembly for a file
+EX/heap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/EX/heap.cpp.s
+.PHONY : EX/heap.cpp.s
 
 EX/pointer.obj: EX/pointer.cpp.obj
 
@@ -449,6 +528,87 @@ week13/practice13-1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-1.dir\build.make CMakeFiles/practice13-1.dir/week13/practice13-1.cpp.s
 .PHONY : week13/practice13-1.cpp.s
 
+week13/practice13-2.obj: week13/practice13-2.cpp.obj
+
+.PHONY : week13/practice13-2.obj
+
+# target to build an object file
+week13/practice13-2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-2.dir\build.make CMakeFiles/practice13-2.dir/week13/practice13-2.cpp.obj
+.PHONY : week13/practice13-2.cpp.obj
+
+week13/practice13-2.i: week13/practice13-2.cpp.i
+
+.PHONY : week13/practice13-2.i
+
+# target to preprocess a source file
+week13/practice13-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-2.dir\build.make CMakeFiles/practice13-2.dir/week13/practice13-2.cpp.i
+.PHONY : week13/practice13-2.cpp.i
+
+week13/practice13-2.s: week13/practice13-2.cpp.s
+
+.PHONY : week13/practice13-2.s
+
+# target to generate assembly for a file
+week13/practice13-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-2.dir\build.make CMakeFiles/practice13-2.dir/week13/practice13-2.cpp.s
+.PHONY : week13/practice13-2.cpp.s
+
+week13/practice13-3.obj: week13/practice13-3.cpp.obj
+
+.PHONY : week13/practice13-3.obj
+
+# target to build an object file
+week13/practice13-3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-3.dir\build.make CMakeFiles/practice13-3.dir/week13/practice13-3.cpp.obj
+.PHONY : week13/practice13-3.cpp.obj
+
+week13/practice13-3.i: week13/practice13-3.cpp.i
+
+.PHONY : week13/practice13-3.i
+
+# target to preprocess a source file
+week13/practice13-3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-3.dir\build.make CMakeFiles/practice13-3.dir/week13/practice13-3.cpp.i
+.PHONY : week13/practice13-3.cpp.i
+
+week13/practice13-3.s: week13/practice13-3.cpp.s
+
+.PHONY : week13/practice13-3.s
+
+# target to generate assembly for a file
+week13/practice13-3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-3.dir\build.make CMakeFiles/practice13-3.dir/week13/practice13-3.cpp.s
+.PHONY : week13/practice13-3.cpp.s
+
+week13/practice13-4.obj: week13/practice13-4.cpp.obj
+
+.PHONY : week13/practice13-4.obj
+
+# target to build an object file
+week13/practice13-4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-4.dir\build.make CMakeFiles/practice13-4.dir/week13/practice13-4.cpp.obj
+.PHONY : week13/practice13-4.cpp.obj
+
+week13/practice13-4.i: week13/practice13-4.cpp.i
+
+.PHONY : week13/practice13-4.i
+
+# target to preprocess a source file
+week13/practice13-4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-4.dir\build.make CMakeFiles/practice13-4.dir/week13/practice13-4.cpp.i
+.PHONY : week13/practice13-4.cpp.i
+
+week13/practice13-4.s: week13/practice13-4.cpp.s
+
+.PHONY : week13/practice13-4.s
+
+# target to generate assembly for a file
+week13/practice13-4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-4.dir\build.make CMakeFiles/practice13-4.dir/week13/practice13-4.cpp.s
+.PHONY : week13/practice13-4.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -458,16 +618,23 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... binarySearchTree
+	@echo ... heap
 	@echo ... pointer
 	@echo ... practice12-1
 	@echo ... practice12-2
 	@echo ... practice12-3
 	@echo ... practice12-4
 	@echo ... practice13-1
+	@echo ... practice13-2
+	@echo ... practice13-3
+	@echo ... practice13-4
 	@echo ... vector
 	@echo ... EX/binarySearchTree.obj
 	@echo ... EX/binarySearchTree.i
 	@echo ... EX/binarySearchTree.s
+	@echo ... EX/heap.obj
+	@echo ... EX/heap.i
+	@echo ... EX/heap.s
 	@echo ... EX/pointer.obj
 	@echo ... EX/pointer.i
 	@echo ... EX/pointer.s
@@ -489,6 +656,15 @@ help:
 	@echo ... week13/practice13-1.obj
 	@echo ... week13/practice13-1.i
 	@echo ... week13/practice13-1.s
+	@echo ... week13/practice13-2.obj
+	@echo ... week13/practice13-2.i
+	@echo ... week13/practice13-2.s
+	@echo ... week13/practice13-3.obj
+	@echo ... week13/practice13-3.i
+	@echo ... week13/practice13-3.s
+	@echo ... week13/practice13-4.obj
+	@echo ... week13/practice13-4.i
+	@echo ... week13/practice13-4.s
 .PHONY : help
 
 
