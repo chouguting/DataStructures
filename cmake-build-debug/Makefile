@@ -285,6 +285,58 @@ practice13-3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-3.dir\build.make CMakeFiles/practice13-3.dir/build
 .PHONY : practice13-3/fast
 
+#=============================================================================
+# Target rules for targets named practice14-1
+
+# Build rule for target.
+practice14-1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice14-1
+.PHONY : practice14-1
+
+# fast build rule for target.
+practice14-1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-1.dir\build.make CMakeFiles/practice14-1.dir/build
+.PHONY : practice14-1/fast
+
+#=============================================================================
+# Target rules for targets named practice14-2
+
+# Build rule for target.
+practice14-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice14-2
+.PHONY : practice14-2
+
+# fast build rule for target.
+practice14-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-2.dir\build.make CMakeFiles/practice14-2.dir/build
+.PHONY : practice14-2/fast
+
+#=============================================================================
+# Target rules for targets named practice14-4
+
+# Build rule for target.
+practice14-4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice14-4
+.PHONY : practice14-4
+
+# fast build rule for target.
+practice14-4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-4.dir\build.make CMakeFiles/practice14-4.dir/build
+.PHONY : practice14-4/fast
+
+#=============================================================================
+# Target rules for targets named practice14-3
+
+# Build rule for target.
+practice14-3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice14-3
+.PHONY : practice14-3
+
+# fast build rule for target.
+practice14-3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-3.dir\build.make CMakeFiles/practice14-3.dir/build
+.PHONY : practice14-3/fast
+
 EX/binarySearchTree.obj: EX/binarySearchTree.cpp.obj
 
 .PHONY : EX/binarySearchTree.obj
@@ -609,6 +661,114 @@ week13/practice13-4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice13-4.dir\build.make CMakeFiles/practice13-4.dir/week13/practice13-4.cpp.s
 .PHONY : week13/practice13-4.cpp.s
 
+week14/practice14-1.obj: week14/practice14-1.cpp.obj
+
+.PHONY : week14/practice14-1.obj
+
+# target to build an object file
+week14/practice14-1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-1.dir\build.make CMakeFiles/practice14-1.dir/week14/practice14-1.cpp.obj
+.PHONY : week14/practice14-1.cpp.obj
+
+week14/practice14-1.i: week14/practice14-1.cpp.i
+
+.PHONY : week14/practice14-1.i
+
+# target to preprocess a source file
+week14/practice14-1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-1.dir\build.make CMakeFiles/practice14-1.dir/week14/practice14-1.cpp.i
+.PHONY : week14/practice14-1.cpp.i
+
+week14/practice14-1.s: week14/practice14-1.cpp.s
+
+.PHONY : week14/practice14-1.s
+
+# target to generate assembly for a file
+week14/practice14-1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-1.dir\build.make CMakeFiles/practice14-1.dir/week14/practice14-1.cpp.s
+.PHONY : week14/practice14-1.cpp.s
+
+week14/practice14-2.obj: week14/practice14-2.cpp.obj
+
+.PHONY : week14/practice14-2.obj
+
+# target to build an object file
+week14/practice14-2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-2.dir\build.make CMakeFiles/practice14-2.dir/week14/practice14-2.cpp.obj
+.PHONY : week14/practice14-2.cpp.obj
+
+week14/practice14-2.i: week14/practice14-2.cpp.i
+
+.PHONY : week14/practice14-2.i
+
+# target to preprocess a source file
+week14/practice14-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-2.dir\build.make CMakeFiles/practice14-2.dir/week14/practice14-2.cpp.i
+.PHONY : week14/practice14-2.cpp.i
+
+week14/practice14-2.s: week14/practice14-2.cpp.s
+
+.PHONY : week14/practice14-2.s
+
+# target to generate assembly for a file
+week14/practice14-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-2.dir\build.make CMakeFiles/practice14-2.dir/week14/practice14-2.cpp.s
+.PHONY : week14/practice14-2.cpp.s
+
+week14/practice14-3.obj: week14/practice14-3.cpp.obj
+
+.PHONY : week14/practice14-3.obj
+
+# target to build an object file
+week14/practice14-3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-3.dir\build.make CMakeFiles/practice14-3.dir/week14/practice14-3.cpp.obj
+.PHONY : week14/practice14-3.cpp.obj
+
+week14/practice14-3.i: week14/practice14-3.cpp.i
+
+.PHONY : week14/practice14-3.i
+
+# target to preprocess a source file
+week14/practice14-3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-3.dir\build.make CMakeFiles/practice14-3.dir/week14/practice14-3.cpp.i
+.PHONY : week14/practice14-3.cpp.i
+
+week14/practice14-3.s: week14/practice14-3.cpp.s
+
+.PHONY : week14/practice14-3.s
+
+# target to generate assembly for a file
+week14/practice14-3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-3.dir\build.make CMakeFiles/practice14-3.dir/week14/practice14-3.cpp.s
+.PHONY : week14/practice14-3.cpp.s
+
+week14/practice14-4.obj: week14/practice14-4.cpp.obj
+
+.PHONY : week14/practice14-4.obj
+
+# target to build an object file
+week14/practice14-4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-4.dir\build.make CMakeFiles/practice14-4.dir/week14/practice14-4.cpp.obj
+.PHONY : week14/practice14-4.cpp.obj
+
+week14/practice14-4.i: week14/practice14-4.cpp.i
+
+.PHONY : week14/practice14-4.i
+
+# target to preprocess a source file
+week14/practice14-4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-4.dir\build.make CMakeFiles/practice14-4.dir/week14/practice14-4.cpp.i
+.PHONY : week14/practice14-4.cpp.i
+
+week14/practice14-4.s: week14/practice14-4.cpp.s
+
+.PHONY : week14/practice14-4.s
+
+# target to generate assembly for a file
+week14/practice14-4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice14-4.dir\build.make CMakeFiles/practice14-4.dir/week14/practice14-4.cpp.s
+.PHONY : week14/practice14-4.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -628,6 +788,10 @@ help:
 	@echo ... practice13-2
 	@echo ... practice13-3
 	@echo ... practice13-4
+	@echo ... practice14-1
+	@echo ... practice14-2
+	@echo ... practice14-3
+	@echo ... practice14-4
 	@echo ... vector
 	@echo ... EX/binarySearchTree.obj
 	@echo ... EX/binarySearchTree.i
@@ -665,6 +829,18 @@ help:
 	@echo ... week13/practice13-4.obj
 	@echo ... week13/practice13-4.i
 	@echo ... week13/practice13-4.s
+	@echo ... week14/practice14-1.obj
+	@echo ... week14/practice14-1.i
+	@echo ... week14/practice14-1.s
+	@echo ... week14/practice14-2.obj
+	@echo ... week14/practice14-2.i
+	@echo ... week14/practice14-2.s
+	@echo ... week14/practice14-3.obj
+	@echo ... week14/practice14-3.i
+	@echo ... week14/practice14-3.s
+	@echo ... week14/practice14-4.obj
+	@echo ... week14/practice14-4.i
+	@echo ... week14/practice14-4.s
 .PHONY : help
 
 
