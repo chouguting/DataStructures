@@ -30,6 +30,7 @@ void printResult(int data[], int size) {
     cout << endl;
 }
 
+
 void unionSets(int data[], int dest, int orgin) {
     if (dest > orgin)swap(dest, orgin);
     if (data[orgin] != -1) {
@@ -46,6 +47,25 @@ int find(int data[], int num) {
     return num;
 }
 
+
+void print2(int data[], int size) {
+    for (int i = 0; i < size; i++) {
+        if (data[i] != -1)continue;
+        cout << " {";
+        bool first = true;
+        for (int j = 0; j < size; j++) {
+            if (find(data, j) == find(data, i)) {
+                if (!first)cout << ",";
+                cout << j;
+                first = false;
+            }
+        }
+        cout << "}";
+    }
+    cout << endl;
+}
+
+
 int main() {
     int size;
     cin >> size;
@@ -58,7 +78,7 @@ int main() {
         if (scanf("Union(%d,%d)", &num1, &num2)) {
             printf("Union(%d,%d):", num1, num2);
             unionSets(data, num1, num2);
-            printResult(data, size);
+            print2(data, size);
         } else if (scanf("Find(%d), Find(%d)", &num1, &num2)) {
             printf("Find(%d), Find(%d): ", num1, num2);
             if (find(data, num1) == find(data, num2)) {
