@@ -1,5 +1,4 @@
 #include "stdio.h"
-
 int main() {
     int size;
     scanf("%d", &size);
@@ -14,9 +13,9 @@ int main() {
             }
         }
     }
-    bool pass = true;
+    int pass = 1;
     for (int i = 1; i < size; i++) {
-        if (data[i] == -1)pass = false;
+        if (data[i] == -1)pass = 0;
     }
     (pass) ? printf("1\n") : printf("-1\n");
 }

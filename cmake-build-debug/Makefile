@@ -389,6 +389,19 @@ practice15-3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice15-3.dir\build.make CMakeFiles/practice15-3.dir/build
 .PHONY : practice15-3/fast
 
+#=============================================================================
+# Target rules for targets named practice15-3-2
+
+# Build rule for target.
+practice15-3-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice15-3-2
+.PHONY : practice15-3-2
+
+# fast build rule for target.
+practice15-3-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice15-3-2.dir\build.make CMakeFiles/practice15-3-2.dir/build
+.PHONY : practice15-3-2/fast
+
 EX/binarySearchTree.obj: EX/binarySearchTree.cpp.obj
 
 .PHONY : EX/binarySearchTree.obj
@@ -875,6 +888,33 @@ week15/practice15-2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice15-2.dir\build.make CMakeFiles/practice15-2.dir/week15/practice15-2.cpp.s
 .PHONY : week15/practice15-2.cpp.s
 
+week15/practice15-3-2.obj: week15/practice15-3-2.cpp.obj
+
+.PHONY : week15/practice15-3-2.obj
+
+# target to build an object file
+week15/practice15-3-2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice15-3-2.dir\build.make CMakeFiles/practice15-3-2.dir/week15/practice15-3-2.cpp.obj
+.PHONY : week15/practice15-3-2.cpp.obj
+
+week15/practice15-3-2.i: week15/practice15-3-2.cpp.i
+
+.PHONY : week15/practice15-3-2.i
+
+# target to preprocess a source file
+week15/practice15-3-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice15-3-2.dir\build.make CMakeFiles/practice15-3-2.dir/week15/practice15-3-2.cpp.i
+.PHONY : week15/practice15-3-2.cpp.i
+
+week15/practice15-3-2.s: week15/practice15-3-2.cpp.s
+
+.PHONY : week15/practice15-3-2.s
+
+# target to generate assembly for a file
+week15/practice15-3-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice15-3-2.dir\build.make CMakeFiles/practice15-3-2.dir/week15/practice15-3-2.cpp.s
+.PHONY : week15/practice15-3-2.cpp.s
+
 week15/practice15-3.obj: week15/practice15-3.cpp.obj
 
 .PHONY : week15/practice15-3.obj
@@ -955,6 +995,7 @@ help:
 	@echo ... practice15-1
 	@echo ... practice15-2
 	@echo ... practice15-3
+	@echo ... practice15-3-2
 	@echo ... practice15-4
 	@echo ... vector
 	@echo ... EX/binarySearchTree.obj
@@ -1011,6 +1052,9 @@ help:
 	@echo ... week15/practice15-2.obj
 	@echo ... week15/practice15-2.i
 	@echo ... week15/practice15-2.s
+	@echo ... week15/practice15-3-2.obj
+	@echo ... week15/practice15-3-2.i
+	@echo ... week15/practice15-3-2.s
 	@echo ... week15/practice15-3.obj
 	@echo ... week15/practice15-3.i
 	@echo ... week15/practice15-3.s
