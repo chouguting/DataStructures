@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/choug/CLionProjects/DataStructure/EX/heap.cpp" "C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/heap.dir/EX/heap.cpp.obj"
+  "C:/Users/choug/CLionProjects/DataStructures/EX/heap.cpp" "C:/Users/choug/CLionProjects/DataStructures/cmake-build-debug/CMakeFiles/heap.dir/EX/heap.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

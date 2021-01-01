@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/choug/CLionProjects/DataStructure/week12/practice12-3.cpp" "C:/Users/choug/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/practice12-3.dir/week12/practice12-3.cpp.obj"
+  "C:/Users/choug/CLionProjects/DataStructures/week12/practice12-3.cpp" "C:/Users/choug/CLionProjects/DataStructures/cmake-build-debug/CMakeFiles/practice12-3.dir/week12/practice12-3.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
