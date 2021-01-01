@@ -2,20 +2,20 @@
 
 using namespace std;
 
-class Item {
+class ItemNode {
 public:
     char name;
     float value;
     float weight;
 
-    Item(char name, float value, float weight) : name(name), value(value), weight(weight) {}
+    ItemNode(char name, float value, float weight) : name(name), value(value), weight(weight) {}
 
-    Item() {}
+    ItemNode() {}
 };
 
 class StoragePlace {
 public:
-    Item data[10];
+    ItemNode data[10];
     int top = -1;
     int maxWeight;
 
@@ -35,18 +35,18 @@ public:
         return (top == -1) ? true : false;
     }
 
-    bool push(Item item) {
+    bool push(ItemNode item) {
         if (getWeight() + item.weight > maxWeight)return false;
         data[++top] = item;
         return true;
     }
 
-    Item pop() {
+    ItemNode pop() {
         if (!isEmpty())top--;
         return data[top + 1];
     }
 
-    bool topOneWorthToBeReplaced(Item item) {
+    bool topOneWorthToBeReplaced(ItemNode item) {
         if (data[top].value < item.value && (getWeight() - data[top].weight + item.weight) <= 20)return true;
         return false;
     }
@@ -72,7 +72,7 @@ int main() {
         StoragePlace floor(1000);
         cin >> name >> value >> weight;
         getchar();
-        Item itemForNow(name, value, weight);
+        ItemNode itemForNow(name, value, weight);
         if (backPack.push(itemForNow)) {
             continue;
         } else {
