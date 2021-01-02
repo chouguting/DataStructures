@@ -19,7 +19,7 @@ private:
                     lowList[location - theList] = lowList[(*location)[i]];
                 }
             } else if (lastLocation != &theList[(*location)[i]]) {
-                if (lowList[(*location)[i]] < lowList[location - theList]) {
+                if (lowList[(*location)[i]] < dfnList[location - theList]) {
                     lowList[location - theList] = lowList[(*location)[i]];
                 }
             }
