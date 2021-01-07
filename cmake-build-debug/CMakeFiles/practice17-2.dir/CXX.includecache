@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/choug/CLionProjects/DataStructures/week16/practice16-1.cpp
+C:/Users/choug/CLionProjects/DataStructure/week17/practice17-2.cpp
 iostream
 -
 vector
+-
+algorithm
 -
 

@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\choug\CLionProjects\DataStructures
+CMAKE_SOURCE_DIR = C:\Users\choug\CLionProjects\DataStructure
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\choug\CLionProjects\DataStructures\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = C:\Users\choug\CLionProjects\DataStructures\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructures\cmake-build-debug\CMakeFiles C:\Users\choug\CLionProjects\DataStructures\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructures\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -414,6 +414,32 @@ practice15-3-2: cmake_check_build_system
 practice15-3-2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice15-3-2.dir\build.make CMakeFiles/practice15-3-2.dir/build
 .PHONY : practice15-3-2/fast
+
+#=============================================================================
+# Target rules for targets named practice17-1
+
+# Build rule for target.
+practice17-1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice17-1
+.PHONY : practice17-1
+
+# fast build rule for target.
+practice17-1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-1.dir\build.make CMakeFiles/practice17-1.dir/build
+.PHONY : practice17-1/fast
+
+#=============================================================================
+# Target rules for targets named practice17-2
+
+# Build rule for target.
+practice17-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice17-2
+.PHONY : practice17-2
+
+# fast build rule for target.
+practice17-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/build
+.PHONY : practice17-2/fast
 
 EX/binarySearchTree.obj: EX/binarySearchTree.cpp.obj
 
@@ -1009,6 +1035,60 @@ week16/practice16-1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice16-1.dir\build.make CMakeFiles/practice16-1.dir/week16/practice16-1.cpp.s
 .PHONY : week16/practice16-1.cpp.s
 
+week17/practice17-1.obj: week17/practice17-1.cpp.obj
+
+.PHONY : week17/practice17-1.obj
+
+# target to build an object file
+week17/practice17-1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-1.dir\build.make CMakeFiles/practice17-1.dir/week17/practice17-1.cpp.obj
+.PHONY : week17/practice17-1.cpp.obj
+
+week17/practice17-1.i: week17/practice17-1.cpp.i
+
+.PHONY : week17/practice17-1.i
+
+# target to preprocess a source file
+week17/practice17-1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-1.dir\build.make CMakeFiles/practice17-1.dir/week17/practice17-1.cpp.i
+.PHONY : week17/practice17-1.cpp.i
+
+week17/practice17-1.s: week17/practice17-1.cpp.s
+
+.PHONY : week17/practice17-1.s
+
+# target to generate assembly for a file
+week17/practice17-1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-1.dir\build.make CMakeFiles/practice17-1.dir/week17/practice17-1.cpp.s
+.PHONY : week17/practice17-1.cpp.s
+
+week17/practice17-2.obj: week17/practice17-2.cpp.obj
+
+.PHONY : week17/practice17-2.obj
+
+# target to build an object file
+week17/practice17-2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/week17/practice17-2.cpp.obj
+.PHONY : week17/practice17-2.cpp.obj
+
+week17/practice17-2.i: week17/practice17-2.cpp.i
+
+.PHONY : week17/practice17-2.i
+
+# target to preprocess a source file
+week17/practice17-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/week17/practice17-2.cpp.i
+.PHONY : week17/practice17-2.cpp.i
+
+week17/practice17-2.s: week17/practice17-2.cpp.s
+
+.PHONY : week17/practice17-2.s
+
+# target to generate assembly for a file
+week17/practice17-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/week17/practice17-2.cpp.s
+.PHONY : week17/practice17-2.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1038,6 +1118,8 @@ help:
 	@echo ... practice15-3-2
 	@echo ... practice15-4
 	@echo ... practice16-1
+	@echo ... practice17-1
+	@echo ... practice17-2
 	@echo ... vector
 	@echo ... EX/binarySearchTree.obj
 	@echo ... EX/binarySearchTree.i
@@ -1105,6 +1187,12 @@ help:
 	@echo ... week16/practice16-1.obj
 	@echo ... week16/practice16-1.i
 	@echo ... week16/practice16-1.s
+	@echo ... week17/practice17-1.obj
+	@echo ... week17/practice17-1.i
+	@echo ... week17/practice17-1.s
+	@echo ... week17/practice17-2.obj
+	@echo ... week17/practice17-2.i
+	@echo ... week17/practice17-2.s
 .PHONY : help
 
 
