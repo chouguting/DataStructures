@@ -18,6 +18,7 @@ public:
         listTop = -1;
     }
 
+
     void addData(int vertex1, int vertex2, int weight) {
         if (max(vertex1, vertex2) > listTop)listTop = max(vertex1, vertex2);
         EdgeList.push_back({vertex1, vertex2, weight});
