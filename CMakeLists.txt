@@ -4,4 +4,4 @@ project(DataStructure)
 set(CMAKE_CXX_STANDARD 14)
 
 
-add_executable(practice17-3 week17/practice17-3.cpp)
+add_executable(practice17-2 week17/practice17-2.cpp)

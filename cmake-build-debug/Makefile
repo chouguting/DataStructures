@@ -130,44 +130,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named practice17-3
+# Target rules for targets named practice17-2
 
 # Build rule for target.
-practice17-3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice17-3
-.PHONY : practice17-3
+practice17-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice17-2
+.PHONY : practice17-2
 
 # fast build rule for target.
-practice17-3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-3.dir\build.make CMakeFiles/practice17-3.dir/build
-.PHONY : practice17-3/fast
+practice17-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/build
+.PHONY : practice17-2/fast
 
-week17/practice17-3.obj: week17/practice17-3.cpp.obj
+week17/practice17-2.obj: week17/practice17-2.cpp.obj
 
-.PHONY : week17/practice17-3.obj
+.PHONY : week17/practice17-2.obj
 
 # target to build an object file
-week17/practice17-3.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-3.dir\build.make CMakeFiles/practice17-3.dir/week17/practice17-3.cpp.obj
-.PHONY : week17/practice17-3.cpp.obj
+week17/practice17-2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/week17/practice17-2.cpp.obj
+.PHONY : week17/practice17-2.cpp.obj
 
-week17/practice17-3.i: week17/practice17-3.cpp.i
+week17/practice17-2.i: week17/practice17-2.cpp.i
 
-.PHONY : week17/practice17-3.i
+.PHONY : week17/practice17-2.i
 
 # target to preprocess a source file
-week17/practice17-3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-3.dir\build.make CMakeFiles/practice17-3.dir/week17/practice17-3.cpp.i
-.PHONY : week17/practice17-3.cpp.i
+week17/practice17-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/week17/practice17-2.cpp.i
+.PHONY : week17/practice17-2.cpp.i
 
-week17/practice17-3.s: week17/practice17-3.cpp.s
+week17/practice17-2.s: week17/practice17-2.cpp.s
 
-.PHONY : week17/practice17-3.s
+.PHONY : week17/practice17-2.s
 
 # target to generate assembly for a file
-week17/practice17-3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-3.dir\build.make CMakeFiles/practice17-3.dir/week17/practice17-3.cpp.s
-.PHONY : week17/practice17-3.cpp.s
+week17/practice17-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/week17/practice17-2.cpp.s
+.PHONY : week17/practice17-2.cpp.s
 
 # Help Target
 help:
@@ -177,10 +177,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... practice17-3
-	@echo ... week17/practice17-3.obj
-	@echo ... week17/practice17-3.i
-	@echo ... week17/practice17-3.s
+	@echo ... practice17-2
+	@echo ... week17/practice17-2.obj
+	@echo ... week17/practice17-2.i
+	@echo ... week17/practice17-2.s
 .PHONY : help
 
 

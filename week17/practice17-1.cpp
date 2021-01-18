@@ -17,6 +17,7 @@ public:
         listTop = -1;
     }
 
+
     void addData(int vertex1, int vertex2, int weight) {
         if (max(vertex1, vertex2) > listTop)listTop = max(vertex1, vertex2);
         EdgeList.push_back({vertex1, vertex2, weight});
@@ -63,6 +64,7 @@ public:
                 Indexer++;
                 continue;
             } else {
+                m
                 cout << connectedCount + 1 << ": ";
                 printf("<%d,%d>\n", EdgeList[Indexer].vertex1, EdgeList[Indexer].vertex2);
                 Union(relation, EdgeList[Indexer].vertex1, EdgeList[Indexer].vertex2);
