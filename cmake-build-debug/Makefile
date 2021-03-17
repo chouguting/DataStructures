@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = C:\Users\choug\CLionProjects\DataStructure\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -96,6 +85,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -142,6 +142,19 @@ practice17-2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/build
 .PHONY : practice17-2/fast
 
+#=============================================================================
+# Target rules for targets named practice17-4
+
+# Build rule for target.
+practice17-4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 practice17-4
+.PHONY : practice17-4
+
+# fast build rule for target.
+practice17-4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-4.dir\build.make CMakeFiles/practice17-4.dir/build
+.PHONY : practice17-4/fast
+
 week17/practice17-2.obj: week17/practice17-2.cpp.obj
 
 .PHONY : week17/practice17-2.obj
@@ -169,6 +182,33 @@ week17/practice17-2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-2.dir\build.make CMakeFiles/practice17-2.dir/week17/practice17-2.cpp.s
 .PHONY : week17/practice17-2.cpp.s
 
+week17/practice17-4.obj: week17/practice17-4.cpp.obj
+
+.PHONY : week17/practice17-4.obj
+
+# target to build an object file
+week17/practice17-4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-4.dir\build.make CMakeFiles/practice17-4.dir/week17/practice17-4.cpp.obj
+.PHONY : week17/practice17-4.cpp.obj
+
+week17/practice17-4.i: week17/practice17-4.cpp.i
+
+.PHONY : week17/practice17-4.i
+
+# target to preprocess a source file
+week17/practice17-4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-4.dir\build.make CMakeFiles/practice17-4.dir/week17/practice17-4.cpp.i
+.PHONY : week17/practice17-4.cpp.i
+
+week17/practice17-4.s: week17/practice17-4.cpp.s
+
+.PHONY : week17/practice17-4.s
+
+# target to generate assembly for a file
+week17/practice17-4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practice17-4.dir\build.make CMakeFiles/practice17-4.dir/week17/practice17-4.cpp.s
+.PHONY : week17/practice17-4.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -178,9 +218,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... practice17-2
+	@echo ... practice17-4
 	@echo ... week17/practice17-2.obj
 	@echo ... week17/practice17-2.i
 	@echo ... week17/practice17-2.s
+	@echo ... week17/practice17-4.obj
+	@echo ... week17/practice17-4.i
+	@echo ... week17/practice17-4.s
 .PHONY : help
 
 
