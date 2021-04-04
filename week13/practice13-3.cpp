@@ -1,3 +1,4 @@
+//Week 13_練習三：Min Heap 刪除節點
 #include <iostream>
 #include <cstring>
 

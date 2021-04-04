@@ -1,3 +1,4 @@
+//Week 17_加分題：計算 dist^k [u]
 #include <iostream>
 #include <vector>
 

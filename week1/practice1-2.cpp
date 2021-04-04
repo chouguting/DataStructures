@@ -1,4 +1,4 @@
-
+//Week 1_練習二：質因數分解
 #include <iostream>
 #include <vector>
 #include <math.h>

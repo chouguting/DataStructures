@@ -1,3 +1,4 @@
+//Week 1_練習一：計算總和、乘積、差、商和餘數
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,4 @@
+//Week 6_加分題：文字頻率分析
 #include <iostream>
 #include <cstring>
 #include <vector>

@@ -1,3 +1,4 @@
+//Week 7_加分題：尋找最長回文字串
 #include <stdio.h>
 #include <string.h>
 

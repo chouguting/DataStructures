@@ -1,3 +1,4 @@
+//Week 10_練習三：不成對的襪子
 #include <iostream>
 #include <cstring>
 

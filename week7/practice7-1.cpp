@@ -1,3 +1,4 @@
+//Week 7_練習一：刮號對稱性
 #include <iostream>
 #include <cstring>
 

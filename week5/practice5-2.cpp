@@ -1,3 +1,4 @@
+//Week 5_練習二：多項式加法
 #include <iostream>
 
 #define MAX_TERM 10000

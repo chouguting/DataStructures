@@ -1,3 +1,4 @@
+//Week 7_加分題：左右為難的小偷
 #include <iostream>
 
 using namespace std;

@@ -1,3 +1,4 @@
+//Week 6_練習三：計算A × A^T
 #include <iostream>
 #include <algorithm>
 

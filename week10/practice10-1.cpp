@@ -1,3 +1,4 @@
+//Week 10_練習一：建立鏈結與在不同位置插入數值
 #include <iostream>
 
 using namespace std;

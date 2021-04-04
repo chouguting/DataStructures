@@ -1,3 +1,4 @@
+//Week 1_練習二：質因數分解
 #include <iostream>
 
 using namespace std;

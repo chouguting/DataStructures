@@ -1,3 +1,4 @@
+//Week 4_加分題：文字接龍
 #include <iostream>
 #include <cstring>
 #include <algorithm>

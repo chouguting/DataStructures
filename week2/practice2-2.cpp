@@ -1,3 +1,4 @@
+//Week 2_練習二：二元搜尋法
 #include <iostream>
 using namespace std;
 void swap(int *a,int *b){

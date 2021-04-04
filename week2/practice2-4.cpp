@@ -1,3 +1,4 @@
+//Week 2_加分題：交集法
 #include <iostream>
 using namespace std;
 int fibonacciSeq(int length){
